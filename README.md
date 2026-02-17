@@ -8,6 +8,7 @@ SUBIT Narrative Engine is a formal system for analyzing, constructing, and gener
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/)
 [![Jupyter Notebook](https://img.shields.io/badge/jupyter-notebook-orange.svg)](https://jupyter.org/)
 [![Version](https://img.shields.io/badge/version-1.0.0-purple.svg)]()
+[![Poetry Engine](https://img.shields.io/badge/poetry-v1.1.0-8A2BE2.svg)](docs/poetry/POETRY.md)  
 
 ---
 
@@ -22,6 +23,12 @@ SUBIT (from *sub* + *it* — the substrate of existence) offers a **minimal disc
 | **WHEN** | WINTER | AUTUMN | SPRING | SUMMER |
 
 **4 × 4 × 4 = 64 archetypes** — the complete spectrum of possible states of being.
+
+## 🎨 SUBIT Poetry Engine v1.1.0
+
+Now with poetry generation! Create sonnets, haiku, and free verse from the same 64 archetypes.
+
+[Read more](docs/poetry/POETRY.md)
 
 ---
 
