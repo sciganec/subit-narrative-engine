@@ -1,0 +1,912 @@
+{
+  "metadata": {
+    "name": "SUBIT Transmutation Catalog",
+    "version": "1.0.0",
+    "description": "Complete catalog of SUBIT transmutations including 12 master formulas and generative formulas",
+    "total_master_formulas": 12,
+    "total_generative_formulas": 64,
+    "total_possible_transmutations": 262144,
+    "fundamental_law": "Initial State ⊕ External Impulse ⊕ Catalyst = New State",
+    "xor_properties": {
+      "identity": "A ⊕ Zero = A",
+      "self_inverse": "A ⊕ A = Zero",
+      "commutative": "A ⊕ B = B ⊕ A",
+      "associative": "(A ⊕ B) ⊕ C = A ⊕ (B ⊕ C)"
+    }
+  },
+  "master_formulas": [
+    {
+      "id": 1,
+      "name": "Philosopher's Stone",
+      "description": "Personal longing becomes collective achievement",
+      "initial": {
+        "code": "10 11 00",
+        "binary": "101100",
+        "name": "Steadfast",
+        "who": "ME",
+        "where": "SOUTH",
+        "when": "WINTER"
+      },
+      "impulse": {
+        "code": "00 10 10",
+        "binary": "001010",
+        "name": "Ghost",
+        "who": "THEY",
+        "where": "EAST",
+        "when": "SPRING"
+      },
+      "catalyst": {
+        "code": "01 00 01",
+        "binary": "010001",
+        "name": "Beloved",
+        "who": "YOU",
+        "where": "NORTH",
+        "when": "AUTUMN"
+      },
+      "result": {
+        "code": "11 01 11",
+        "binary": "110111",
+        "name": "Council",
+        "who": "WE",
+        "where": "WEST",
+        "when": "SUMMER"
+      },
+      "verification": "10 11 00 ⊕ 00 10 10 ⊕ 01 00 01 = 11 01 11",
+      "applications": ["Grief work", "Community building", "Trauma recovery"],
+      "interpretation": "The individual in their deepest winter receives an unexpected impulse from the beyond through the intimate presence of a beloved other, transmuting into collective wisdom."
+    },
+    {
+      "id": 2,
+      "name": "Hero's Journey",
+      "description": "Innocence confronts shadow, returns with wisdom",
+      "initial": {
+        "code": "10 10 10",
+        "binary": "101010",
+        "name": "Pioneer",
+        "who": "ME",
+        "where": "EAST",
+        "when": "SPRING"
+      },
+      "impulse": {
+        "code": "00 11 00",
+        "binary": "001100",
+        "name": "Shadow",
+        "who": "THEY",
+        "where": "SOUTH",
+        "when": "WINTER"
+      },
+      "catalyst": {
+        "code": "11 01 01",
+        "binary": "110101",
+        "name": "Council",
+        "who": "WE",
+        "where": "WEST",
+        "when": "AUTUMN"
+      },
+      "result": {
+        "code": "01 00 11",
+        "binary": "010011",
+        "name": "Confessor",
+        "who": "YOU",
+        "where": "NORTH",
+        "when": "SUMMER"
+      },
+      "verification": "10 10 10 ⊕ 00 11 00 ⊕ 11 01 01 = 01 00 11",
+      "applications": ["Coming of age", "Career transformation", "Spiritual awakening"],
+      "interpretation": "The innocent hero confronts the dark unknown, receives the accumulated wisdom of community, and emerges as one who guides others."
+    },
+    {
+      "id": 3,
+      "name": "Alchemical Marriage",
+      "description": "Union of opposites returns to the source",
+      "initial": {
+        "code": "10 10 10",
+        "binary": "101010",
+        "name": "Pioneer",
+        "who": "ME",
+        "where": "EAST",
+        "when": "SPRING"
+      },
+      "impulse": {
+        "code": "01 01 01",
+        "binary": "010101",
+        "name": "Mediator",
+        "who": "YOU",
+        "where": "WEST",
+        "when": "AUTUMN"
+      },
+      "catalyst": {
+        "code": "11 11 11",
+        "binary": "111111",
+        "name": "Conciliar",
+        "who": "WE",
+        "where": "SOUTH",
+        "when": "SUMMER"
+      },
+      "result": {
+        "code": "00 00 00",
+        "binary": "000000",
+        "name": "Zero",
+        "who": "THEY",
+        "where": "NORTH",
+        "when": "WINTER"
+      },
+      "verification": "10 10 10 ⊕ 01 01 01 ⊕ 11 11 11 = 00 00 00",
+      "applications": ["Sacred partnerships", "Mystical experiences", "Creative conception"],
+      "interpretation": "The masculine principle unites with the feminine principle through sacred community, returning to the unmanifest source."
+    },
+    {
+      "id": 4,
+      "name": "Creative Process",
+      "description": "Solitude + inspiration + mastery = shared creation",
+      "initial": {
+        "code": "10 00 00",
+        "binary": "100000",
+        "name": "Recluse",
+        "who": "ME",
+        "where": "NORTH",
+        "when": "WINTER"
+      },
+      "impulse": {
+        "code": "00 10 10",
+        "binary": "001010",
+        "name": "Ghost",
+        "who": "THEY",
+        "where": "EAST",
+        "when": "SPRING"
+      },
+      "catalyst": {
+        "code": "01 11 11",
+        "binary": "011111",
+        "name": "Celebrant",
+        "who": "YOU",
+        "where": "SOUTH",
+        "when": "SUMMER"
+      },
+      "result": {
+        "code": "11 01 01",
+        "binary": "110101",
+        "name": "Council",
+        "who": "WE",
+        "where": "WEST",
+        "when": "AUTUMN"
+      },
+      "verification": "10 00 00 ⊕ 00 10 10 ⊕ 01 11 11 = 11 01 01",
+      "applications": ["Artistic creation", "Innovation", "Project completion"],
+      "interpretation": "The artist in silence is visited by inspiration; guided by mastery, they bring forth work for the community."
+    },
+    {
+      "id": 5,
+      "name": "Healing",
+      "description": "Isolation + collective energy + mediator = integration",
+      "initial": {
+        "code": "10 01 00",
+        "binary": "100100",
+        "name": "Artisan",
+        "who": "ME",
+        "where": "WEST",
+        "when": "WINTER"
+      },
+      "impulse": {
+        "code": "00 11 11",
+        "binary": "001111",
+        "name": "Carnival",
+        "who": "THEY",
+        "where": "SOUTH",
+        "when": "SUMMER"
+      },
+      "catalyst": {
+        "code": "01 10 10",
+        "binary": "011010",
+        "name": "Guide",
+        "who": "YOU",
+        "where": "EAST",
+        "when": "SPRING"
+      },
+      "result": {
+        "code": "11 00 01",
+        "binary": "110001",
+        "name": "Synod",
+        "who": "WE",
+        "where": "NORTH",
+        "when": "AUTUMN"
+      },
+      "verification": "10 01 00 ⊕ 00 11 11 ⊕ 01 10 10 = 11 00 01",
+      "applications": ["Psychotherapy", "Trauma recovery", "Support groups"],
+      "interpretation": "The isolated wounded one enters the collective healing field through a skilled mediator, integrating into shared human experience."
+    },
+    {
+      "id": 6,
+      "name": "Revelation",
+      "description": "From void, through seeking and communion, wisdom emerges",
+      "initial": {
+        "code": "00 00 00",
+        "binary": "000000",
+        "name": "Zero",
+        "who": "THEY",
+        "where": "NORTH",
+        "when": "WINTER"
+      },
+      "impulse": {
+        "code": "10 10 10",
+        "binary": "101010",
+        "name": "Pioneer",
+        "who": "ME",
+        "where": "EAST",
+        "when": "SPRING"
+      },
+      "catalyst": {
+        "code": "11 11 11",
+        "binary": "111111",
+        "name": "Conciliar",
+        "who": "WE",
+        "where": "SOUTH",
+        "when": "SUMMER"
+      },
+      "result": {
+        "code": "01 01 01",
+        "binary": "010101",
+        "name": "Mediator",
+        "who": "YOU",
+        "where": "WEST",
+        "when": "AUTUMN"
+      },
+      "verification": "00 00 00 ⊕ 10 10 10 ⊕ 11 11 11 = 01 01 01",
+      "applications": ["Mystical experience", "Philosophical insight", "Prophetic vision"],
+      "interpretation": "From the unmanifest, the seeker in perfect communion receives revelation that becomes wisdom to share."
+    },
+    {
+      "id": 7,
+      "name": "Power Transformation",
+      "description": "Individual power becomes collective guardianship",
+      "initial": {
+        "code": "10 11 11",
+        "binary": "101111",
+        "name": "Ecstatic",
+        "who": "ME",
+        "where": "SOUTH",
+        "when": "SUMMER"
+      },
+      "impulse": {
+        "code": "00 01 01",
+        "binary": "000101",
+        "name": "Custodian",
+        "who": "THEY",
+        "where": "WEST",
+        "when": "AUTUMN"
+      },
+      "catalyst": {
+        "code": "01 00 10",
+        "binary": "010010",
+        "name": "Teacher",
+        "who": "YOU",
+        "where": "NORTH",
+        "when": "SPRING"
+      },
+      "result": {
+        "code": "11 10 00",
+        "binary": "111000",
+        "name": "Tribe",
+        "who": "WE",
+        "where": "EAST",
+        "when": "WINTER"
+      },
+      "verification": "10 11 11 ⊕ 00 01 01 ⊕ 01 00 10 = 11 10 00",
+      "applications": ["Leadership transition", "Legacy planning", "Mentorship"],
+      "interpretation": "The powerful individual receives a cosmic sign through a kindred spirit, transforming personal power into collective responsibility."
+    },
+    {
+      "id": 8,
+      "name": "Dark Night",
+      "description": "Community joy, through crisis, retreats to potential",
+      "initial": {
+        "code": "11 11 11",
+        "binary": "111111",
+        "name": "Conciliar",
+        "who": "WE",
+        "where": "SOUTH",
+        "when": "SUMMER"
+      },
+      "impulse": {
+        "code": "00 01 01",
+        "binary": "000101",
+        "name": "Custodian",
+        "who": "THEY",
+        "where": "WEST",
+        "when": "AUTUMN"
+      },
+      "catalyst": {
+        "code": "01 10 00",
+        "binary": "011000",
+        "name": "Mentor",
+        "who": "YOU",
+        "where": "EAST",
+        "when": "WINTER"
+      },
+      "result": {
+        "code": "10 00 10",
+        "binary": "100010",
+        "name": "Seeker",
+        "who": "ME",
+        "where": "NORTH",
+        "when": "SPRING"
+      },
+      "verification": "11 11 11 ⊕ 00 01 01 ⊕ 01 10 00 = 10 00 10",
+      "applications": ["Depression", "Disillusionment", "Spiritual crisis"],
+      "interpretation": "A community in bliss receives a disturbing sign and follows a false guide, dissolving into isolated potential."
+    },
+    {
+      "id": 9,
+      "name": "Awakening",
+      "description": "Old patterns shattered by force become witness",
+      "initial": {
+        "code": "10 00 01",
+        "binary": "100001",
+        "name": "Philosopher",
+        "who": "ME",
+        "where": "NORTH",
+        "when": "AUTUMN"
+      },
+      "impulse": {
+        "code": "00 11 10",
+        "binary": "001110",
+        "name": "Trickster",
+        "who": "THEY",
+        "where": "SOUTH",
+        "when": "SPRING"
+      },
+      "catalyst": {
+        "code": "11 10 11",
+        "binary": "111011",
+        "name": "Nation",
+        "who": "WE",
+        "where": "EAST",
+        "when": "SUMMER"
+      },
+      "result": {
+        "code": "01 01 00",
+        "binary": "010100",
+        "name": "Scribe",
+        "who": "YOU",
+        "where": "WEST",
+        "when": "WINTER"
+      },
+      "verification": "10 00 01 ⊕ 00 11 10 ⊕ 11 10 11 = 01 01 00",
+      "applications": ["Enlightenment", "Breakthrough", "Paradigm shift"],
+      "interpretation": "The one who guards old patterns is struck by cosmic force while supported by a constructive community, awakening as pure witness."
+    },
+    {
+      "id": 10,
+      "name": "Renewal",
+      "description": "Unrealized possibilities + endurance = catharsis",
+      "initial": {
+        "code": "00 00 01",
+        "binary": "000001",
+        "name": "Anchorite",
+        "who": "THEY",
+        "where": "NORTH",
+        "when": "AUTUMN"
+      },
+      "impulse": {
+        "code": "10 11 00",
+        "binary": "101100",
+        "name": "Steadfast",
+        "who": "ME",
+        "where": "SOUTH",
+        "when": "WINTER"
+      },
+      "catalyst": {
+        "code": "11 10 10",
+        "binary": "111010",
+        "name": "Caravan",
+        "who": "WE",
+        "where": "EAST",
+        "when": "SPRING"
+      },
+      "result": {
+        "code": "01 01 11",
+        "binary": "010111",
+        "name": "Interpreter",
+        "who": "YOU",
+        "where": "WEST",
+        "when": "SUMMER"
+      },
+      "verification": "00 00 01 ⊕ 10 11 00 ⊕ 11 10 10 = 01 01 11",
+      "applications": ["Grief work", "Letting go", "Emotional healing"],
+      "interpretation": "Grieving what could have been, sustained by endurance and new collective beginnings, one reaches emotional release."
+    },
+    {
+      "id": 11,
+      "name": "Reconciliation",
+      "description": "Judgment + higher perspective + love = renewed union",
+      "initial": {
+        "code": "10 01 01",
+        "binary": "100101",
+        "name": "Critic",
+        "who": "ME",
+        "where": "WEST",
+        "when": "AUTUMN"
+      },
+      "impulse": {
+        "code": "00 10 11",
+        "binary": "001011",
+        "name": "Harbinger",
+        "who": "THEY",
+        "where": "EAST",
+        "when": "SUMMER"
+      },
+      "catalyst": {
+        "code": "01 00 00",
+        "binary": "010000",
+        "name": "Hermit",
+        "who": "YOU",
+        "where": "NORTH",
+        "when": "WINTER"
+      },
+      "result": {
+        "code": "11 11 10",
+        "binary": "111110",
+        "name": "Festival",
+        "who": "WE",
+        "where": "SOUTH",
+        "when": "SPRING"
+      },
+      "verification": "10 01 01 ⊕ 00 10 11 ⊕ 01 00 00 = 11 11 10",
+      "applications": ["Forgiveness", "Relationship repair", "Conflict resolution"],
+      "interpretation": "The one who judges receives a higher perspective through unconditional love, dissolving into renewed sacred union."
+    },
+    {
+      "id": 12,
+      "name": "Complete Transmutation",
+      "description": "The three active pillars return to the source",
+      "initial": {
+        "code": "10 10 10",
+        "binary": "101010",
+        "name": "Pioneer",
+        "who": "ME",
+        "where": "EAST",
+        "when": "SPRING"
+      },
+      "impulse": {
+        "code": "11 11 11",
+        "binary": "111111",
+        "name": "Conciliar",
+        "who": "WE",
+        "where": "SOUTH",
+        "when": "SUMMER"
+      },
+      "catalyst": {
+        "code": "01 01 01",
+        "binary": "010101",
+        "name": "Mediator",
+        "who": "YOU",
+        "where": "WEST",
+        "when": "AUTUMN"
+      },
+      "result": {
+        "code": "00 00 00",
+        "binary": "000000",
+        "name": "Zero",
+        "who": "THEY",
+        "where": "NORTH",
+        "when": "WINTER"
+      },
+      "verification": "10 10 10 ⊕ 11 11 11 ⊕ 01 01 01 = 00 00 00",
+      "applications": ["Meditation", "Mystical union", "Philosophical understanding"],
+      "interpretation": "The Alpha, Omega, and Catalyst — all manifestation — when perfectly combined, return to the unmanifest source. The cycle completes."
+    }
+  ],
+  "generative_formulas": {
+    "me_archetypes": [
+      {
+        "target": "10 00 00",
+        "name": "Recluse",
+        "formula": "Steadfast (10 11 00) ⊕ Recluse (10 01 00) ⊕ Zero (00 00 00)"
+      },
+      {
+        "target": "10 00 01",
+        "name": "Philosopher",
+        "formula": "Reaper (10 11 01) ⊕ Judge (10 01 01) ⊕ Unrealized (00 00 01)"
+      },
+      {
+        "target": "10 00 10",
+        "name": "Seeker",
+        "formula": "Warrior (10 11 10) ⊕ Sage (10 01 10) ⊕ Oracle (00 00 10)"
+      },
+      {
+        "target": "10 00 11",
+        "name": "Sage",
+        "formula": "Creator (10 11 11) ⊕ Philosopher (10 01 11) ⊕ Spectator (00 00 11)"
+      },
+      {
+        "target": "10 01 00",
+        "name": "Artisan",
+        "formula": "Hermit (10 10 00) ⊕ Judge (10 01 01) ⊕ Anchoret (10 00 00)"
+      },
+      {
+        "target": "10 01 01",
+        "name": "Critic",
+        "formula": "Strategist (10 10 01) ⊕ Artisan (10 01 00) ⊕ Guardian (10 00 01)"
+      },
+      {
+        "target": "10 01 10",
+        "name": "Creator",
+        "formula": "Pioneer (10 10 10) ⊕ Master (10 01 11) ⊕ Seeker (10 00 10)"
+      },
+      {
+        "target": "10 01 11",
+        "name": "Master",
+        "formula": "Leader (10 10 11) ⊕ Creator (10 01 10) ⊕ Sage (10 00 11)"
+      },
+      {
+        "target": "10 10 00",
+        "name": "Heir",
+        "formula": "Strategist (10 10 01) ⊕ Steadfast (10 11 00) ⊕ Artisan (10 01 00)"
+      },
+      {
+        "target": "10 10 01",
+        "name": "Guardian",
+        "formula": "Heir (10 10 00) ⊕ Reaper (10 11 01) ⊕ Critic (10 01 01)"
+      },
+      {
+        "target": "10 10 10",
+        "name": "Pioneer",
+        "formula": "Leader (10 10 11) ⊕ Warrior (10 11 10) ⊕ Creator (10 01 10)"
+      },
+      {
+        "target": "10 10 11",
+        "name": "Hero",
+        "formula": "Pioneer (10 10 10) ⊕ Wanderer (10 11 11) ⊕ Master (10 01 11)"
+      },
+      {
+        "target": "10 11 00",
+        "name": "Steadfast",
+        "formula": "Hermit (10 10 00) ⊕ Reaper (10 11 01) ⊕ Recluse (10 00 00)"
+      },
+      {
+        "target": "10 11 01",
+        "name": "Martyr",
+        "formula": "Strategist (10 10 01) ⊕ Steadfast (10 11 00) ⊕ Philosopher (10 00 01)"
+      },
+      {
+        "target": "10 11 10",
+        "name": "Wanderer",
+        "formula": "Pioneer (10 10 10) ⊕ Ecstatic (10 11 11) ⊕ Seeker (10 00 10)"
+      },
+      {
+        "target": "10 11 11",
+        "name": "Ecstatic",
+        "formula": "Hero (10 10 11) ⊕ Wanderer (10 11 10) ⊕ Sage (10 00 11)"
+      }
+    ],
+    "we_archetypes": [
+      {
+        "target": "11 00 00",
+        "name": "Congregation",
+        "formula": "Circle (11 11 00) ⊕ Silent (11 01 00) ⊕ Zero (00 00 00)"
+      },
+      {
+        "target": "11 00 01",
+        "name": "Synod",
+        "formula": "Feasters (11 11 01) ⊕ Assembly (11 01 01) ⊕ Unrealized (00 00 01)"
+      },
+      {
+        "target": "11 00 10",
+        "name": "Academy",
+        "formula": "Nuptial (11 11 10) ⊕ Elders (11 01 10) ⊕ Oracle (00 00 10)"
+      },
+      {
+        "target": "11 00 11",
+        "name": "Pantheon",
+        "formula": "Conciliar (11 11 11) ⊕ Council (11 01 11) ⊕ Spectator (00 00 11)"
+      },
+      {
+        "target": "11 01 00",
+        "name": "Guild",
+        "formula": "Guardians (11 10 00) ⊕ Assembly (11 01 01) ⊕ Common Source (11 00 00)"
+      },
+      {
+        "target": "11 01 01",
+        "name": "Council",
+        "formula": "Chroniclers (11 10 01) ⊕ Guild (11 01 00) ⊕ Shared Experience (11 00 01)"
+      },
+      {
+        "target": "11 01 10",
+        "name": "Workshop",
+        "formula": "Pioneers (11 10 10) ⊕ Assembly (11 01 11) ⊕ Shared Dream (11 00 10)"
+      },
+      {
+        "target": "11 01 11",
+        "name": "Assembly",
+        "formula": "Builders (11 10 11) ⊕ Council (11 01 01) ⊕ Shared Memory (11 00 11)"
+      },
+      {
+        "target": "11 10 00",
+        "name": "Tribe",
+        "formula": "Chroniclers (11 10 01) ⊕ Circle (11 11 00) ⊕ Guild (11 01 00)"
+      },
+      {
+        "target": "11 10 01",
+        "name": "Chorus",
+        "formula": "Tribe (11 10 00) ⊕ Feasters (11 11 01) ⊕ Council (11 01 01)"
+      },
+      {
+        "target": "11 10 10",
+        "name": "Caravan",
+        "formula": "Pioneers (11 10 11) ⊕ Nuptial (11 11 10) ⊕ Workshop (11 01 10)"
+      },
+      {
+        "target": "11 10 11",
+        "name": "Nation",
+        "formula": "Caravan (11 10 10) ⊕ Conciliar (11 11 11) ⊕ Assembly (11 01 11)"
+      },
+      {
+        "target": "11 11 00",
+        "name": "Sanctuary",
+        "formula": "Guardians (11 10 00) ⊕ Feasters (11 11 01) ⊕ Common Source (11 00 00)"
+      },
+      {
+        "target": "11 11 01",
+        "name": "Celebration",
+        "formula": "Chroniclers (11 10 01) ⊕ Sanctuary (11 11 00) ⊕ Shared Experience (11 00 01)"
+      },
+      {
+        "target": "11 11 10",
+        "name": "Festival",
+        "formula": "Pioneers (11 10 10) ⊕ Celebration (11 11 11) ⊕ Shared Dream (11 00 10)"
+      },
+      {
+        "target": "11 11 11",
+        "name": "Conciliar",
+        "formula": "Builders (11 10 11) ⊕ Nuptial (11 11 10) ⊕ Shared Memory (11 00 11)"
+      }
+    ],
+    "you_archetypes": [
+      {
+        "target": "01 00 00",
+        "name": "Hermit",
+        "formula": "Beloved (01 00 01) ⊕ Lover (01 11 00) ⊕ Zero (00 00 00)"
+      },
+      {
+        "target": "01 00 01",
+        "name": "Beloved",
+        "formula": "Confessor (01 00 11) ⊕ Muse (01 11 10) ⊕ Unrealized (00 00 01)"
+      },
+      {
+        "target": "01 00 10",
+        "name": "Teacher",
+        "formula": "Confessor (01 00 11) ⊕ Celebrant (01 11 11) ⊕ Oracle (00 00 10)"
+      },
+      {
+        "target": "01 00 11",
+        "name": "Confessor",
+        "formula": "Teacher (01 00 10) ⊕ Prophet (01 10 11) ⊕ Spectator (00 00 11)"
+      },
+      {
+        "target": "01 01 00",
+        "name": "Scribe",
+        "formula": "Mediator (01 01 01) ⊕ Mourner (01 11 00) ⊕ Common Source (11 00 00)"
+      },
+      {
+        "target": "01 01 01",
+        "name": "Mediator",
+        "formula": "Interpreter (01 10 11) ⊕ Mentor (01 11 10) ⊕ Mirror (01 01 10)"
+      },
+      {
+        "target": "01 01 10",
+        "name": "Apprentice",
+        "formula": "Interpreter (01 10 11) ⊕ Guide (01 10 10) ⊕ Festival (11 11 10)"
+      },
+      {
+        "target": "01 01 11",
+        "name": "Interpreter",
+        "formula": "Mediator (01 01 01) ⊕ Prophet (01 10 11) ⊕ Celebration (11 11 01)"
+      },
+      {
+        "target": "01 10 00",
+        "name": "Mentor",
+        "formula": "Witness (01 10 01) ⊕ Prophet (01 10 11) ⊕ Circle (11 11 00)"
+      },
+      {
+        "target": "01 10 01",
+        "name": "Witness",
+        "formula": "Guide (01 10 10) ⊕ Prophet (01 10 11) ⊕ Shared Dream (11 00 10)"
+      },
+      {
+        "target": "01 10 10",
+        "name": "Guide",
+        "formula": "Witness (01 10 01) ⊕ Prophet (01 10 11) ⊕ Shared Memory (11 00 11)"
+      },
+      {
+        "target": "01 10 11",
+        "name": "Prophet",
+        "formula": "Mediator (01 01 01) ⊕ Guide (01 10 10) ⊕ Shared Experience (11 00 01)"
+      },
+      {
+        "target": "01 11 00",
+        "name": "Mourner",
+        "formula": "Lover (01 11 01) ⊕ Celebrant (01 11 11) ⊕ Circle (11 11 00)"
+      },
+      {
+        "target": "01 11 01",
+        "name": "Lover",
+        "formula": "Muse (01 11 10) ⊕ Celebrant (01 11 11) ⊕ Shared Dream (11 00 10)"
+      },
+      {
+        "target": "01 11 10",
+        "name": "Muse",
+        "formula": "Lover (01 11 01) ⊕ Celebrant (01 11 11) ⊕ Shared Memory (11 00 11)"
+      },
+      {
+        "target": "01 11 11",
+        "name": "Celebrant",
+        "formula": "Confessor (01 00 11) ⊕ Lover (01 11 01) ⊕ Shared Experience (11 00 01)"
+      }
+    ],
+    "they_archetypes": [
+      {
+        "target": "00 00 00",
+        "name": "Zero",
+        "formula": "Any archetype ⊕ itself"
+      },
+      {
+        "target": "00 00 01",
+        "name": "Anchorite",
+        "formula": "Zero ⊕ Oracle (00 00 10) ⊕ Spectator (00 00 11)"
+      },
+      {
+        "target": "00 00 10",
+        "name": "Oracle",
+        "formula": "Zero ⊕ Anchorite (00 00 01) ⊕ Spectator (00 00 11)"
+      },
+      {
+        "target": "00 00 11",
+        "name": "Spectator",
+        "formula": "Zero ⊕ Anchorite (00 00 01) ⊕ Oracle (00 00 10)"
+      },
+      {
+        "target": "00 01 00",
+        "name": "Judge",
+        "formula": "Custodian (00 01 01) ⊕ Architect (00 01 10) ⊕ Legislator (00 01 11)"
+      },
+      {
+        "target": "00 01 01",
+        "name": "Custodian",
+        "formula": "Judge (00 01 00) ⊕ Architect (00 01 10) ⊕ Legislator (00 01 11)"
+      },
+      {
+        "target": "00 01 10",
+        "name": "Architect",
+        "formula": "Judge (00 01 00) ⊕ Custodian (00 01 01) ⊕ Legislator (00 01 11)"
+      },
+      {
+        "target": "00 01 11",
+        "name": "Legislator",
+        "formula": "Judge (00 01 00) ⊕ Custodian (00 01 01) ⊕ Architect (00 01 10)"
+      },
+      {
+        "target": "00 10 00",
+        "name": "Ancestor",
+        "formula": "Chronicler (00 10 01) ⊕ Ghost (00 10 10) ⊕ Harbinger (00 10 11)"
+      },
+      {
+        "target": "00 10 01",
+        "name": "Chronicler",
+        "formula": "Ancestor (00 10 00) ⊕ Ghost (00 10 10) ⊕ Harbinger (00 10 11)"
+      },
+      {
+        "target": "00 10 10",
+        "name": "Ghost",
+        "formula": "Ancestor (00 10 00) ⊕ Chronicler (00 10 01) ⊕ Harbinger (00 10 11)"
+      },
+      {
+        "target": "00 10 11",
+        "name": "Harbinger",
+        "formula": "Ancestor (00 10 00) ⊕ Chronicler (00 10 01) ⊕ Ghost (00 10 10)"
+      },
+      {
+        "target": "00 11 00",
+        "name": "Shadow",
+        "formula": "Scapegoat (00 11 01) ⊕ Trickster (00 11 10) ⊕ Carnival (00 11 11)"
+      },
+      {
+        "target": "00 11 01",
+        "name": "Scapegoat",
+        "formula": "Shadow (00 11 00) ⊕ Trickster (00 11 10) ⊕ Carnival (00 11 11)"
+      },
+      {
+        "target": "00 11 10",
+        "name": "Trickster",
+        "formula": "Shadow (00 11 00) ⊕ Scapegoat (00 11 01) ⊕ Carnival (00 11 11)"
+      },
+      {
+        "target": "00 11 11",
+        "name": "Carnival",
+        "formula": "Shadow (00 11 00) ⊕ Scapegoat (00 11 01) ⊕ Trickster (00 11 10)"
+      }
+    ]
+  },
+  "xor_properties_demonstration": {
+    "identity": [
+      {
+        "archetype": "10 10 10",
+        "name": "Pioneer",
+        "operation": "Pioneer ⊕ Zero = Pioneer",
+        "result": "10 10 10"
+      }
+    ],
+    "self_inverse": [
+      {
+        "archetype": "10 10 10",
+        "name": "Pioneer",
+        "operation": "Pioneer ⊕ Pioneer = Zero",
+        "result": "00 00 00"
+      }
+    ],
+    "commutative": [
+      {
+        "a": "10 10 10",
+        "a_name": "Pioneer",
+        "b": "00 11 00",
+        "b_name": "Shadow",
+        "operation": "Pioneer ⊕ Shadow = Shadow ⊕ Pioneer",
+        "result": "10 01 10"
+      }
+    ],
+    "associative": [
+      {
+        "a": "10 10 10",
+        "a_name": "Pioneer",
+        "b": "00 11 00",
+        "b_name": "Shadow",
+        "c": "11 01 01",
+        "c_name": "Council",
+        "operation": "(Pioneer ⊕ Shadow) ⊕ Council = Pioneer ⊕ (Shadow ⊕ Council)",
+        "result": "01 00 11"
+      }
+    ]
+  },
+  "four_pillars_relationships": [
+    {
+      "relationship": "Pioneer ⊕ Conciliar = Mediator ⊕ Zero",
+      "left": "10 10 10 ⊕ 11 11 11 = 01 01 01",
+      "right": "01 01 01 ⊕ 00 00 00 = 01 01 01"
+    },
+    {
+      "relationship": "Pioneer ⊕ Mediator = Conciliar ⊕ Zero",
+      "left": "10 10 10 ⊕ 01 01 01 = 11 11 11",
+      "right": "11 11 11 ⊕ 00 00 00 = 11 11 11"
+    },
+    {
+      "relationship": "Pioneer ⊕ Zero = Conciliar ⊕ Mediator",
+      "left": "10 10 10 ⊕ 00 00 00 = 10 10 10",
+      "right": "11 11 11 ⊕ 01 01 01 = 10 10 10"
+    }
+  ],
+  "the_four_pillars": [
+    {
+      "code": "10 10 10",
+      "name": "Pioneer",
+      "role": "Alpha — the beginning",
+      "description": "The one who sets out first. Pure initiative."
+    },
+    {
+      "code": "11 11 11",
+      "name": "Conciliar",
+      "role": "Omega — the completion",
+      "description": "The state of perfect union. Collective ecstasy."
+    },
+    {
+      "code": "01 01 01",
+      "name": "Mediator",
+      "role": "Catalyst — the transformer",
+      "description": "The one who listens and transforms. The catalyst."
+    },
+    {
+      "code": "00 00 00",
+      "name": "Zero",
+      "role": "Source — the unmanifest",
+      "description": "The primordial state before manifestation. Pure potential."
+    }
+  ]
+}
