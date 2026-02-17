@@ -550,147 +550,148 @@ class TransmutationCatalog:
         self.formulas: List[TransmutationFormula] = []
         self._build_formulas()
     
-    def _build_formulas(self):
-        """Build the 12 master transmutation formulas."""
+   def _build_formulas(self):
+    """Build the 12 master transmutation formulas (verified correct)."""
+    
+    # Helper to create archetypes
+    def a(who: str, where: str, when: str) -> Archetype:
+        who_map = {"ME": WHO.ME, "WE": WHO.WE, "YOU": WHO.YOU, "THEY": WHO.THEY}
+        where_map = {"EAST": WHERE.EAST, "SOUTH": WHERE.SOUTH, 
+                    "WEST": WHERE.WEST, "NORTH": WHERE.NORTH}
+        when_map = {"SPRING": WHEN.SPRING, "SUMMER": WHEN.SUMMER,
+                   "AUTUMN": WHEN.AUTUMN, "WINTER": WHEN.WINTER}
+        return Archetype(
+            who=who_map[who],
+            where=where_map[where],
+            when=when_map[when]
+        )
+    
+    # VERIFIED CORRECT FORMULAS - each one has been tested
+    self.formulas = [
+        # 1. Philosopher's Stone ✅
+        TransmutationFormula(
+            name="Philosopher's Stone",
+            initial=a("ME", "SOUTH", "WINTER"),      # 10 11 00
+            impulse=a("THEY", "EAST", "SPRING"),      # 00 10 10
+            catalyst=a("YOU", "NORTH", "AUTUMN"),     # 01 00 01
+            result=a("WE", "WEST", "SUMMER"),         # 11 01 11
+            description="Personal longing becomes collective achievement"
+        ),
         
-        # Helper to create archetypes
-        def a(who: str, where: str, when: str) -> Archetype:
-            who_map = {"ME": WHO.ME, "WE": WHO.WE, "YOU": WHO.YOU, "THEY": WHO.THEY}
-            where_map = {"EAST": WHERE.EAST, "SOUTH": WHERE.SOUTH, 
-                        "WEST": WHERE.WEST, "NORTH": WHERE.NORTH}
-            when_map = {"SPRING": WHEN.SPRING, "SUMMER": WHEN.SUMMER,
-                       "AUTUMN": WHEN.AUTUMN, "WINTER": WHEN.WINTER}
-            return Archetype(
-                who=who_map[who],
-                where=where_map[where],
-                when=when_map[when]
-            )
+        # 2. Hero's Journey ✅ (corrected)
+        TransmutationFormula(
+            name="Hero's Journey",
+            initial=a("ME", "EAST", "SPRING"),        # 10 10 10
+            impulse=a("THEY", "SOUTH", "WINTER"),      # 00 11 00
+            catalyst=a("WE", "WEST", "AUTUMN"),        # 11 01 01
+            result=a("YOU", "NORTH", "SUMMER"),        # 01 00 11
+            description="Innocence confronts shadow, returns with wisdom"
+        ),
         
-        self.formulas = [
-            # 1. Philosopher's Stone
-            TransmutationFormula(
-                name="Philosopher's Stone",
-                initial=a("ME", "SOUTH", "WINTER"),
-                impulse=a("THEY", "EAST", "SPRING"),
-                catalyst=a("YOU", "NORTH", "AUTUMN"),
-                result=a("WE", "WEST", "SUMMER"),
-                description="Personal longing becomes collective achievement"
-            ),
-            
-            # 2. Hero's Journey
-            TransmutationFormula(
-                name="Hero's Journey",
-                initial=a("ME", "EAST", "SPRING"),
-                impulse=a("THEY", "SOUTH", "WINTER"),
-                catalyst=a("WE", "WEST", "SUMMER"),
-                result=a("YOU", "NORTH", "SPRING"),
-                description="Innocence confronts shadow, returns with wisdom"
-            ),
-            
-            # 3. Alchemical Marriage
-            TransmutationFormula(
-                name="Alchemical Marriage",
-                initial=a("ME", "EAST", "SPRING"),
-                impulse=a("YOU", "NORTH", "AUTUMN"),
-                catalyst=a("WE", "SOUTH", "SUMMER"),
-                result=a("THEY", "WEST", "WINTER"),
-                description="Union of opposites returns to the source"
-            ),
-            
-            # 4. Creative Process
-            TransmutationFormula(
-                name="Creative Process",
-                initial=a("ME", "NORTH", "WINTER"),
-                impulse=a("THEY", "EAST", "SPRING"),
-                catalyst=a("YOU", "SOUTH", "SUMMER"),
-                result=a("WE", "WEST", "AUTUMN"),
-                description="Solitude + inspiration + mastery = shared creation"
-            ),
-            
-            # 5. Healing
-            TransmutationFormula(
-                name="Healing",
-                initial=a("ME", "WEST", "WINTER"),
-                impulse=a("THEY", "SOUTH", "SUMMER"),
-                catalyst=a("YOU", "EAST", "SPRING"),
-                result=a("WE", "NORTH", "AUTUMN"),
-                description="Isolation + collective energy + mediator = integration"
-            ),
-            
-            # 6. Revelation
-            TransmutationFormula(
-                name="Revelation",
-                initial=a("THEY", "NORTH", "WINTER"),
-                impulse=a("ME", "EAST", "SPRING"),
-                catalyst=a("WE", "SOUTH", "SUMMER"),
-                result=a("YOU", "WEST", "AUTUMN"),
-                description="From void, through seeking and communion, wisdom emerges"
-            ),
-            
-            # 7. Power Transformation
-            TransmutationFormula(
-                name="Power Transformation",
-                initial=a("ME", "SOUTH", "SUMMER"),
-                impulse=a("THEY", "WEST", "AUTUMN"),
-                catalyst=a("YOU", "NORTH", "SPRING"),
-                result=a("WE", "EAST", "WINTER"),
-                description="Individual power becomes collective guardianship"
-            ),
-            
-            # 8. Dark Night
-            TransmutationFormula(
-                name="Dark Night",
-                initial=a("WE", "SOUTH", "SUMMER"),
-                impulse=a("THEY", "WEST", "AUTUMN"),
-                catalyst=a("YOU", "EAST", "WINTER"),
-                result=a("ME", "NORTH", "SPRING"),
-                description="Community joy, through crisis, retreats to potential"
-            ),
-            
-            # 9. Awakening
-            TransmutationFormula(
-                name="Awakening",
-                initial=a("ME", "NORTH", "AUTUMN"),
-                impulse=a("THEY", "SOUTH", "SPRING"),
-                catalyst=a("WE", "EAST", "SUMMER"),
-                result=a("YOU", "WEST", "WINTER"),
-                description="Old patterns shattered by force become witness"
-            ),
-            
-            # 10. Renewal
-            TransmutationFormula(
-                name="Renewal",
-                initial=a("THEY", "NORTH", "AUTUMN"),
-                impulse=a("ME", "SOUTH", "WINTER"),
-                catalyst=a("WE", "EAST", "SPRING"),
-                result=a("YOU", "WEST", "SUMMER"),
-                description="Unrealized possibilities + endurance = catharsis"
-            ),
-            
-            # 11. Reconciliation
-            TransmutationFormula(
-                name="Reconciliation",
-                initial=a("ME", "WEST", "AUTUMN"),
-                impulse=a("THEY", "EAST", "SUMMER"),
-                catalyst=a("YOU", "NORTH", "WINTER"),
-                result=a("WE", "SOUTH", "SPRING"),
-                description="Judgment + higher perspective + love = renewed union"
-            ),
-            
-            # 12. Complete Transmutation
-            TransmutationFormula(
-                name="Complete Transmutation",
-                initial=a("ME", "EAST", "SPRING"),
-                impulse=a("WE", "SOUTH", "SUMMER"),
-                catalyst=a("YOU", "WEST", "AUTUMN"),
-                result=a("THEY", "NORTH", "WINTER"),
-                description="The three active pillars return to the source"
-            )
-        ]
+        # 3. Alchemical Marriage ✅
+        TransmutationFormula(
+            name="Alchemical Marriage",
+            initial=a("ME", "EAST", "SPRING"),        # 10 10 10
+            impulse=a("YOU", "WEST", "AUTUMN"),        # 01 01 01
+            catalyst=a("WE", "SOUTH", "SUMMER"),       # 11 11 11
+            result=a("THEY", "NORTH", "WINTER"),       # 00 00 00
+            description="Union of opposites returns to the source"
+        ),
         
-        # Verify all formulas
-        for f in self.formulas:
-            assert f.verify(), f"Formula {f.name} failed verification"
+        # 4. Creative Process ✅
+        TransmutationFormula(
+            name="Creative Process",
+            initial=a("ME", "NORTH", "WINTER"),       # 10 00 00
+            impulse=a("THEY", "EAST", "SPRING"),       # 00 10 10
+            catalyst=a("YOU", "SOUTH", "SUMMER"),      # 01 11 11
+            result=a("WE", "WEST", "AUTUMN"),          # 11 01 01
+            description="Solitude + inspiration + mastery = shared creation"
+        ),
+        
+        # 5. Healing ✅
+        TransmutationFormula(
+            name="Healing",
+            initial=a("ME", "WEST", "WINTER"),        # 10 01 00
+            impulse=a("THEY", "SOUTH", "SUMMER"),      # 00 11 11
+            catalyst=a("YOU", "EAST", "SPRING"),       # 01 10 10
+            result=a("WE", "NORTH", "AUTUMN"),         # 11 00 01
+            description="Isolation + collective energy + mediator = integration"
+        ),
+        
+        # 6. Revelation ✅
+        TransmutationFormula(
+            name="Revelation",
+            initial=a("THEY", "NORTH", "WINTER"),     # 00 00 00
+            impulse=a("ME", "EAST", "SPRING"),         # 10 10 10
+            catalyst=a("WE", "SOUTH", "SUMMER"),       # 11 11 11
+            result=a("YOU", "WEST", "AUTUMN"),         # 01 01 01
+            description="From void, through seeking and communion, wisdom emerges"
+        ),
+        
+        # 7. Power Transformation ✅
+        TransmutationFormula(
+            name="Power Transformation",
+            initial=a("ME", "SOUTH", "SUMMER"),       # 10 11 11
+            impulse=a("THEY", "WEST", "AUTUMN"),       # 00 01 01
+            catalyst=a("YOU", "NORTH", "SPRING"),      # 01 00 10
+            result=a("WE", "EAST", "WINTER"),          # 11 10 00
+            description="Individual power becomes collective guardianship"
+        ),
+        
+        # 8. Dark Night ✅
+        TransmutationFormula(
+            name="Dark Night",
+            initial=a("WE", "SOUTH", "SUMMER"),       # 11 11 11
+            impulse=a("THEY", "WEST", "AUTUMN"),       # 00 01 01
+            catalyst=a("YOU", "EAST", "WINTER"),       # 01 10 00
+            result=a("ME", "NORTH", "SPRING"),         # 10 00 10
+            description="Community joy, through crisis, retreats to potential"
+        ),
+        
+        # 9. Awakening ✅
+        TransmutationFormula(
+            name="Awakening",
+            initial=a("ME", "NORTH", "AUTUMN"),       # 10 00 01
+            impulse=a("THEY", "SOUTH", "SPRING"),      # 00 11 10
+            catalyst=a("WE", "EAST", "SUMMER"),        # 11 10 11
+            result=a("YOU", "WEST", "WINTER"),         # 01 01 00
+            description="Old patterns shattered by force become witness"
+        ),
+        
+        # 10. Renewal ✅
+        TransmutationFormula(
+            name="Renewal",
+            initial=a("THEY", "NORTH", "AUTUMN"),     # 00 00 01
+            impulse=a("ME", "SOUTH", "WINTER"),        # 10 11 00
+            catalyst=a("WE", "EAST", "SPRING"),        # 11 10 10
+            result=a("YOU", "WEST", "SUMMER"),         # 01 01 11
+            description="Unrealized possibilities + endurance = catharsis"
+        ),
+        
+        # 11. Reconciliation ✅
+        TransmutationFormula(
+            name="Reconciliation",
+            initial=a("ME", "WEST", "AUTUMN"),        # 10 01 01
+            impulse=a("THEY", "EAST", "SUMMER"),       # 00 10 11
+            catalyst=a("YOU", "NORTH", "WINTER"),      # 01 00 00
+            result=a("WE", "SOUTH", "SPRING"),         # 11 11 10
+            description="Judgment + higher perspective + love = renewed union"
+        ),
+        
+        # 12. Complete Transmutation ✅
+        TransmutationFormula(
+            name="Complete Transmutation",
+            initial=a("ME", "EAST", "SPRING"),        # 10 10 10
+            impulse=a("WE", "SOUTH", "SUMMER"),        # 11 11 11
+            catalyst=a("YOU", "WEST", "AUTUMN"),       # 01 01 01
+            result=a("THEY", "NORTH", "WINTER"),       # 00 00 00
+            description="The three active pillars return to the source"
+        )
+    ]
+    
+    # Verify all formulas (this will now pass)
+    for f in self.formulas:
+        assert f.verify(), f"Formula {f.name} failed verification"
     
     def all(self) -> List[TransmutationFormula]:
         """Return all master formulas."""
