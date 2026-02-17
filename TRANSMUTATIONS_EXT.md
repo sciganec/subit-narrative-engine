@@ -1,283 +1,426 @@
-## Complete Catalog of All Transmutations
+# THE COMPLETE SUBIT TRANSMUTATION MATRIX
 
-**SUBIT Narrative Engine — Formal Transformation Specification v1.0.0**
+**4096 possible transformations • 64 generative formulas • 12 master transmutations**
 
-*Initial State ⊕ External Impulse ⊕ Catalyst = New State*
+## 📜 Fundamental Law
+
+The entire SUBIT system rests on a single operation:
+
+```
+Initial State ⊕ External Impulse ⊕ Catalyst = New State
+```
+
+Where ⊕ is the XOR (exclusive OR) operation over 6-bit vectors.
+
+This law is:
+- **Commutative** — order doesn't matter (A ⊕ B = B ⊕ A)
+- **Associative** — grouping doesn't matter ((A ⊕ B) ⊕ C = A ⊕ (B ⊕ C))
+- **Reversible** — every transformation has an inverse (A ⊕ B ⊕ C = D ⇒ D ⊕ B ⊕ C = A)
+- **Complete** — any state can reach any other in at most 3 steps
 
 ---
 
-## 📜 Introduction
+## 🔮 THE 12 MASTER FORMULAS
 
-This document presents the complete canonical catalog of all 4096 possible transmutations in the SUBIT system (64³ = 262,144 total combinations, but many are redundant due to commutativity; this catalog presents the unique significant formulas).
-
-Every transmutation follows the law:
-
-```
-Initial Archetype ⊕ Impulse Archetype ⊕ Catalyst Archetype = Result Archetype
-```
-
-where ⊕ is the XOR operation (bitwise exclusive "or").
+These are the most significant transmutations in the SUBIT system — each one a complete narrative arc, a psychological transformation, or a cosmic process.
 
 ---
 
-## 🔢 Complete Transmutation Table
+### 1. THE PHILOSOPHER'S STONE ⚗️
 
-| # | Initial | Impulse | Catalyst | Result | Name | Type |
-|---|---------|---------|----------|--------|------|------|
-| 1 | 00 00 00 | 00 00 00 | 00 00 00 | 00 00 00 | Zero → Zero | Identity |
-| 2 | 00 00 00 | 00 00 00 | 00 00 01 | 00 00 01 | Zero → Anchorite | Genesis |
-| 3 | 00 00 00 | 00 00 00 | 00 00 10 | 00 00 10 | Zero → Oracle | Genesis |
-| 4 | 00 00 00 | 00 00 00 | 00 00 11 | 00 00 11 | Zero → Spectator | Genesis |
-| 5 | 00 00 00 | 00 00 00 | 00 01 00 | 00 01 00 | Zero → Judge | Genesis |
-| 6 | 00 00 00 | 00 00 00 | 00 01 01 | 00 01 01 | Zero → Custodian | Genesis |
-| 7 | 00 00 00 | 00 00 00 | 00 01 10 | 00 01 10 | Zero → Architect | Genesis |
-| 8 | 00 00 00 | 00 00 00 | 00 01 11 | 00 01 11 | Zero → Legislator | Genesis |
-| 9 | 00 00 00 | 00 00 00 | 00 10 00 | 00 10 00 | Zero → Ancestor | Genesis |
-| 10 | 00 00 00 | 00 00 00 | 00 10 01 | 00 10 01 | Zero → Chronicler | Genesis |
-| 11 | 00 00 00 | 00 00 00 | 00 10 10 | 00 10 10 | Zero → Ghost | Genesis |
-| 12 | 00 00 00 | 00 00 00 | 00 10 11 | 00 10 11 | Zero → Harbinger | Genesis |
-| 13 | 00 00 00 | 00 00 00 | 00 11 00 | 00 11 00 | Zero → Shadow | Genesis |
-| 14 | 00 00 00 | 00 00 00 | 00 11 01 | 00 11 01 | Zero → Scapegoat | Genesis |
-| 15 | 00 00 00 | 00 00 00 | 00 11 10 | 00 11 10 | Zero → Trickster | Genesis |
-| 16 | 00 00 00 | 00 00 00 | 00 11 11 | 00 11 11 | Zero → Carnival | Genesis |
-| 17 | 00 00 00 | 00 00 00 | 01 00 00 | 01 00 00 | Zero → Hermit | Genesis |
-| 18 | 00 00 00 | 00 00 00 | 01 00 01 | 01 00 01 | Zero → Beloved | Genesis |
-| 19 | 00 00 00 | 00 00 00 | 01 00 10 | 01 00 10 | Zero → Teacher | Genesis |
-| 20 | 00 00 00 | 00 00 00 | 01 00 11 | 01 00 11 | Zero → Confessor | Genesis |
-| 21 | 00 00 00 | 00 00 00 | 01 01 00 | 01 01 00 | Zero → Scribe | Genesis |
-| 22 | 00 00 00 | 00 00 00 | 01 01 01 | 01 01 01 | Zero → Mediator | Genesis |
-| 23 | 00 00 00 | 00 00 00 | 01 01 10 | 01 01 10 | Zero → Apprentice | Genesis |
-| 24 | 00 00 00 | 00 00 00 | 01 01 11 | 01 01 11 | Zero → Interpreter | Genesis |
-| 25 | 00 00 00 | 00 00 00 | 01 10 00 | 01 10 00 | Zero → Mentor | Genesis |
-| 26 | 00 00 00 | 00 00 00 | 01 10 01 | 01 10 01 | Zero → Witness | Genesis |
-| 27 | 00 00 00 | 00 00 00 | 01 10 10 | 01 10 10 | Zero → Guide | Genesis |
-| 28 | 00 00 00 | 00 00 00 | 01 10 11 | 01 10 11 | Zero → Prophet | Genesis |
-| 29 | 00 00 00 | 00 00 00 | 01 11 00 | 01 11 00 | Zero → Mourner | Genesis |
-| 30 | 00 00 00 | 00 00 00 | 01 11 01 | 01 11 01 | Zero → Lover | Genesis |
-| 31 | 00 00 00 | 00 00 00 | 01 11 10 | 01 11 10 | Zero → Muse | Genesis |
-| 32 | 00 00 00 | 00 00 00 | 01 11 11 | 01 11 11 | Zero → Celebrant | Genesis |
-| 33 | 00 00 00 | 00 00 00 | 10 00 00 | 10 00 00 | Zero → Recluse | Genesis |
-| 34 | 00 00 00 | 00 00 00 | 10 00 01 | 10 00 01 | Zero → Philosopher | Genesis |
-| 35 | 00 00 00 | 00 00 00 | 10 00 10 | 10 00 10 | Zero → Seeker | Genesis |
-| 36 | 00 00 00 | 00 00 00 | 10 00 11 | 10 00 11 | Zero → Sage | Genesis |
-| 37 | 00 00 00 | 00 00 00 | 10 01 00 | 10 01 00 | Zero → Artisan | Genesis |
-| 38 | 00 00 00 | 00 00 00 | 10 01 01 | 10 01 01 | Zero → Critic | Genesis |
-| 39 | 00 00 00 | 00 00 00 | 10 01 10 | 10 01 10 | Zero → Creator | Genesis |
-| 40 | 00 00 00 | 00 00 00 | 10 01 11 | 10 01 11 | Zero → Master | Genesis |
-| 41 | 00 00 00 | 00 00 00 | 10 10 00 | 10 10 00 | Zero → Heir | Genesis |
-| 42 | 00 00 00 | 00 00 00 | 10 10 01 | 10 10 01 | Zero → Guardian | Genesis |
-| 43 | 00 00 00 | 00 00 00 | 10 10 10 | 10 10 10 | Zero → Pioneer | Genesis |
-| 44 | 00 00 00 | 00 00 00 | 10 10 11 | 10 10 11 | Zero → Hero | Genesis |
-| 45 | 00 00 00 | 00 00 00 | 10 11 00 | 10 11 00 | Zero → Steadfast | Genesis |
-| 46 | 00 00 00 | 00 00 00 | 10 11 01 | 10 11 01 | Zero → Martyr | Genesis |
-| 47 | 00 00 00 | 00 00 00 | 10 11 10 | 10 11 10 | Zero → Wanderer | Genesis |
-| 48 | 00 00 00 | 00 00 00 | 10 11 11 | 10 11 11 | Zero → Ecstatic | Genesis |
-| 49 | 00 00 00 | 00 00 00 | 11 00 00 | 11 00 00 | Zero → Congregation | Genesis |
-| 50 | 00 00 00 | 00 00 00 | 11 00 01 | 11 00 01 | Zero → Synod | Genesis |
-| 51 | 00 00 00 | 00 00 00 | 11 00 10 | 11 00 10 | Zero → Academy | Genesis |
-| 52 | 00 00 00 | 00 00 00 | 11 00 11 | 11 00 11 | Zero → Pantheon | Genesis |
-| 53 | 00 00 00 | 00 00 00 | 11 01 00 | 11 01 00 | Zero → Guild | Genesis |
-| 54 | 00 00 00 | 00 00 00 | 11 01 01 | 11 01 01 | Zero → Council | Genesis |
-| 55 | 00 00 00 | 00 00 00 | 11 01 10 | 11 01 10 | Zero → Workshop | Genesis |
-| 56 | 00 00 00 | 00 00 00 | 11 01 11 | 11 01 11 | Zero → Assembly | Genesis |
-| 57 | 00 00 00 | 00 00 00 | 11 10 00 | 11 10 00 | Zero → Tribe | Genesis |
-| 58 | 00 00 00 | 00 00 00 | 11 10 01 | 11 10 01 | Zero → Chorus | Genesis |
-| 59 | 00 00 00 | 00 00 00 | 11 10 10 | 11 10 10 | Zero → Caravan | Genesis |
-| 60 | 00 00 00 | 00 00 00 | 11 10 11 | 11 10 11 | Zero → Nation | Genesis |
-| 61 | 00 00 00 | 00 00 00 | 11 11 00 | 11 11 00 | Zero → Sanctuary | Genesis |
-| 62 | 00 00 00 | 00 00 00 | 11 11 01 | 11 11 01 | Zero → Celebration | Genesis |
-| 63 | 00 00 00 | 00 00 00 | 11 11 10 | 11 11 10 | Zero → Festival | Genesis |
-| 64 | 00 00 00 | 00 00 00 | 11 11 11 | 11 11 11 | Zero → Conciliar | Genesis |
+*The foundational transmutation — personal longing becomes collective achievement.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Steadfast | ME-SOUTH-WINTER | 10 11 00 |
+| **Impulse** | Ghost | THEY-EAST-SPRING | 00 10 10 |
+| **Catalyst** | Beloved | YOU-NORTH-AUTUMN | 01 00 01 |
+| **Result** | Council | WE-WEST-SUMMER | 11 01 11 |
+
+```
+10 11 00 ⊕ 00 10 10 ⊕ 01 00 01 = 11 01 11
+```
+
+**Interpretation:**  
+The individual in their deepest winter (Steadfast) receives an unexpected impulse from the beyond (Ghost) through the intimate presence of a beloved other (Beloved), transmuting into collective wisdom (Council).
+
+**Applications:** Personal crisis → community support; isolation → belonging; suffering → meaning.
 
 ---
 
-## 🔥 The 12 Master Transmutations (Verified)
+### 2. THE HERO'S JOURNEY ⚔️
 
-| # | Name | Initial | Impulse | Catalyst | Result | Formula |
-|---|------|---------|---------|----------|--------|---------|
-| 1 | **Philosopher's Stone** | Steadfast (10 11 00) | Ghost (00 10 10) | Beloved (01 00 01) | Council (11 01 11) | `10 11 00 ⊕ 00 10 10 ⊕ 01 00 01 = 11 01 11` |
-| 2 | **Hero's Journey** | Pioneer (10 10 10) | Shadow (00 11 00) | Council (11 01 11) | Teacher (01 00 10) | `10 10 10 ⊕ 00 11 00 ⊕ 11 01 11 = 01 00 10` |
-| 3 | **Alchemical Marriage** | Pioneer (10 10 10) | Beloved (01 00 01) | Conciliar (11 11 11) | Mediator (01 01 01) | `10 10 10 ⊕ 01 00 01 ⊕ 11 11 11 = 01 01 01` |
-| 4 | **Creative Process** | Recluse (10 00 00) | Ghost (00 10 10) | Teacher (01 00 10) | Caravan (11 10 10) | `10 00 00 ⊕ 00 10 10 ⊕ 01 00 10 = 11 10 10` |
-| 5 | **Healing** | Recluse (10 00 00) | Carnival (00 11 11) | Mediator (01 01 01) | Council (11 01 11) | `10 00 00 ⊕ 00 11 11 ⊕ 01 01 01 = 11 01 11` |
-| 6 | **Revelation** | Zero (00 00 00) | Pioneer (10 10 10) | Conciliar (11 11 11) | Mediator (01 01 01) | `00 00 00 ⊕ 10 10 10 ⊕ 11 11 11 = 01 01 01` |
-| 7 | **Power Transformation** | Creator (10 01 10) | Chronicler (00 10 01) | Sanctuary (11 11 00) | Chorus (11 10 01) | `10 01 10 ⊕ 00 10 01 ⊕ 11 11 00 = 11 10 01` |
-| 8 | **Dark Night** | Conciliar (11 11 11) | Chronicler (00 10 01) | Guide (01 10 10) | Philosopher (10 00 01) | `11 11 11 ⊕ 00 10 01 ⊕ 01 10 10 = 10 00 01` |
-| 9 | **Awakening** | Guardian (10 10 01) | Trickster (00 11 10) | Workshop (11 01 10) | Beloved (01 00 01) | `10 10 01 ⊕ 00 11 10 ⊕ 11 01 10 = 01 00 01` |
-| 10 | **Renewal** | Scapegoat (00 11 01) | Steadfast (10 11 00) | Nation (11 10 11) | Celebration (11 11 01) | `00 11 01 ⊕ 10 11 00 ⊕ 11 10 11 = 11 11 01` |
-| 11 | **Reconciliation** | Judge (00 01 00) | Spectator (00 00 11) | Mentor (01 10 00) | Celebrant (01 11 11) | `00 01 00 ⊕ 00 00 11 ⊕ 01 10 00 = 01 11 11` |
-| 12 | **Complete Transmutation** | Pioneer (10 10 10) | Conciliar (11 11 11) | Mediator (01 01 01) | Zero (00 00 00) | `10 10 10 ⊕ 11 11 11 ⊕ 01 01 01 = 00 00 00` |
+*The monomyth — from innocent beginnings to wise guidance.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Pioneer | ME-EAST-SPRING | 10 10 10 |
+| **Impulse** | Shadow | THEY-SOUTH-WINTER | 00 11 00 |
+| **Catalyst** | Council | WE-WEST-SUMMER | 11 01 11 |
+| **Result** | Teacher | YOU-NORTH-SPRING | 01 00 10 |
+
+```
+10 10 10 ⊕ 00 11 00 ⊕ 11 01 11 = 01 00 10
+```
+
+**Interpretation:**  
+The innocent hero (Pioneer) confronts the dark unknown (Shadow), receives the accumulated wisdom of community (Council), and emerges as one who guides others (Teacher).
+
+**Applications:** Coming-of-age; career transformation; spiritual awakening.
 
 ---
 
-## 🌟 Significant Transmutations by Theme
+### 3. THE ALCHEMICAL MARRIAGE 💍
 
-### Transmutations of Grief
+*The sacred union of opposites returning to the source.*
 
-| # | Initial | Impulse | Catalyst | Result | Meaning |
-|---|---------|---------|----------|--------|---------|
-| 45 | Steadfast (10 11 00) | Ghost (00 10 10) | Beloved (01 00 01) | Council (11 01 11) | Grief + Stranger + Love = Community |
-| 45 | Steadfast (10 11 00) | Wanderer (10 11 10) | Hermit (01 00 00) | Seeker (10 00 10) | Frozen grief + Restless searching + Solitude = Spiritual quest |
-| 45 | Steadfast (10 11 00) | Martyr (10 11 01) | Witness (01 10 01) | Sage (10 00 11) | Endurance + Sacrifice + Testimony = Wisdom |
-| 45 | Steadfast (10 11 00) | Mourner (01 11 00) | Sanctuary (11 11 00) | Pantheon (11 00 11) | Personal grief + Collective grief + Refuge = Divine wisdom |
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Pioneer | ME-EAST-SPRING | 10 10 10 |
+| **Impulse** | Beloved | YOU-NORTH-AUTUMN | 01 00 01 |
+| **Catalyst** | Conciliar | WE-SOUTH-SUMMER | 11 11 11 |
+| **Result** | Mediator | YOU-WEST-AUTUMN | 01 01 01 |
 
-### Transmutations of Creation
+```
+10 10 10 ⊕ 01 00 01 ⊕ 11 11 11 = 01 01 01
+```
 
-| # | Initial | Impulse | Catalyst | Result | Meaning |
-|---|---------|---------|----------|--------|---------|
-| 39 | Creator (10 01 10) | Muse (01 11 10) | Apprentice (01 01 10) | Master (10 01 11) | Making + Inspiration + Learning = Mastery |
-| 39 | Creator (10 01 10) | Oracle (00 00 10) | Guide (01 10 10) | Prophet (01 10 11) | Craft + Divine speech + Guidance = Vision |
-| 39 | Creator (10 01 10) | Trickster (00 11 10) | Workshop (11 01 10) | Carnival (00 11 11) | Order + Chaos + Collaboration = Release |
-| 39 | Creator (10 01 10) | Architect (00 01 10) | Assembly (11 01 11) | Nation (11 10 11) | Making + Design + Collective = People |
+**Interpretation:**  
+The masculine principle (Pioneer) unites with the feminine principle (Beloved) through sacred community (Conciliar), giving birth to the reconciling force (Mediator).
 
-### Transmutations of Love
-
-| # | Initial | Impulse | Catalyst | Result | Meaning |
-|---|---------|---------|----------|--------|---------|
-| 30 | Lover (01 11 01) | Beloved (01 00 01) | Celebrant (01 11 11) | Confessor (01 00 11) | Passion + Being loved + Joy = Truth-telling |
-| 30 | Lover (01 11 01) | Shadow (00 11 00) | Mediator (01 01 01) | Guide (01 10 10) | Love + Darkness + Reconciliation = Leadership |
-| 30 | Lover (01 11 01) | Ecstatic (10 11 11) | Nuptial (11 11 10) | Festival (11 11 10) | Passion + Divine madness + Union = Celebration |
-
-### Transmutations of Power
-
-| # | Initial | Impulse | Catalyst | Result | Meaning |
-|---|---------|---------|----------|--------|---------|
-| 56 | Assembly (11 01 11) | Judge (00 01 00) | Guardian (10 10 01) | Synod (11 00 01) | Collective + Judgment + Protection = Council |
-| 56 | Assembly (11 01 11) | Shadow (00 11 00) | Confessor (01 00 11) | Nation (11 10 11) | Community + Darkness + Truth = People |
-| 56 | Assembly (11 01 11) | Zero (00 00 00) | Conciliar (11 11 11) | Pioneer (10 10 10) | Collective + Source + Completion = New Beginning |
-
-### Transmutations of Wisdom
-
-| # | Initial | Impulse | Catalyst | Result | Meaning |
-|---|---------|---------|----------|--------|---------|
-| 36 | Sage (10 00 11) | Seeker (10 00 10) | Teacher (01 00 10) | Prophet (01 10 11) | Wisdom + Seeking + Teaching = Vision |
-| 36 | Sage (10 00 11) | Oracle (00 00 10) | Philosopher (10 00 01) | Mediator (01 01 01) | Understanding + Divine voice + Questioning = Reconciliation |
-| 36 | Sage (10 00 11) | Hermit (01 00 00) | Academy (11 00 10) | Pantheon (11 00 11) | Wisdom + Solitude + Learning = Divine assembly |
+**Applications:** Sacred partnerships; conflict resolution; integration of opposites.
 
 ---
 
-## 🔄 Cyclical Transmutations
+### 4. THE CREATIVE PROCESS 🎨
 
-### The Great Cycle: Alpha to Omega and Back
+*From stillness, through inspiration and mastery, to shared creation.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Recluse | ME-NORTH-WINTER | 10 00 00 |
+| **Impulse** | Ghost | THEY-EAST-SPRING | 00 10 10 |
+| **Catalyst** | Teacher | YOU-NORTH-SPRING | 01 00 10 |
+| **Result** | Caravan | WE-EAST-SUMMER | 11 10 10 |
 
 ```
-Pioneer (10 10 10) → Hero (10 10 11) → Guardian (10 10 01) → Heir (10 10 00) → Ancestor (00 10 00) → Ghost (00 10 10) → Harbinger (00 10 11) → Chronicler (00 10 01) → Mentor (01 10 00) → Guide (01 10 10) → Prophet (01 10 11) → Witness (01 10 01) → Teacher (01 00 10) → Confessor (01 00 11) → Beloved (01 00 01) → Hermit (01 00 00) → Philosopher (10 00 01) → Seeker (10 00 10) → Sage (10 00 11) → Recluse (10 00 00) → Artisan (10 01 00) → Creator (10 01 10) → Master (10 01 11) → Critic (10 01 01) → Architect (00 01 10) → Legislator (00 01 11) → Custodian (00 01 01) → Judge (00 01 00) → Scribe (01 01 00) → Apprentice (01 01 10) → Interpreter (01 01 11) → Mediator (01 01 01) → Guild (11 01 00) → Workshop (11 01 10) → Assembly (11 01 11) → Council (11 01 01) → Tribe (11 10 00) → Caravan (11 10 10) → Nation (11 10 11) → Chorus (11 10 01) → Congregation (11 00 00) → Academy (11 00 10) → Pantheon (11 00 11) → Synod (11 00 01) → Sanctuary (11 11 00) → Festival (11 11 10) → Conciliar (11 11 11) → Celebration (11 11 01) → Mourner (01 11 00) → Muse (01 11 10) → Celebrant (01 11 11) → Lover (01 11 01) → Shadow (00 11 00) → Trickster (00 11 10) → Carnival (00 11 11) → Scapegoat (00 11 01) → Steadfast (10 11 00) → Wanderer (10 11 10) → Ecstatic (10 11 11) → Martyr (10 11 01) → Zero (00 00 00) → Oracle (00 00 10) → Spectator (00 00 11) → Anchorite (00 00 01) → Pioneer (10 10 10)
+10 00 00 ⊕ 00 10 10 ⊕ 01 00 10 = 11 10 10
 ```
 
-This cycle contains all 64 archetypes in a continuous loop. Starting from Pioneer, through the complete spectrum of being, returning to Zero and then back to Pioneer.
+**Interpretation:**  
+The artist in silence (Recluse) is visited by inspiration (Ghost); guided by mastery (Teacher), they join a moving community of creation (Caravan).
+
+**Applications:** Artistic creation; innovation; project completion.
 
 ---
 
-## 🧪 Self-Transmutations (A ⊕ A ⊕ A = A)
+### 5. THE HEALING TRANSFORMATION 🏥
 
-For any archetype A:
+*Wounded isolation meets collective healing through a mediator.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Recluse | ME-NORTH-WINTER | 10 00 00 |
+| **Impulse** | Carnival | THEY-SOUTH-SUMMER | 00 11 11 |
+| **Catalyst** | Mediator | YOU-WEST-AUTUMN | 01 01 01 |
+| **Result** | Council | WE-WEST-SUMMER | 11 01 11 |
+
 ```
-A ⊕ A ⊕ A = A
+10 00 00 ⊕ 00 11 11 ⊕ 01 01 01 = 11 01 11
 ```
 
-Example:
+**Interpretation:**  
+The isolated wounded one (Recluse) enters the collective healing field (Carnival) through a skilled mediator (Mediator), integrating into a new community of support (Council).
+
+**Applications:** Psychotherapy; trauma recovery; support groups.
+
+---
+
+### 6. THE REVELATION 🙏
+
+*From the void, through seeking and communion, wisdom emerges.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Zero | THEY-NORTH-WINTER | 00 00 00 |
+| **Impulse** | Pioneer | ME-EAST-SPRING | 10 10 10 |
+| **Catalyst** | Conciliar | WE-SOUTH-SUMMER | 11 11 11 |
+| **Result** | Mediator | YOU-WEST-AUTUMN | 01 01 01 |
+
 ```
-Pioneer (10 10 10) ⊕ Pioneer (10 10 10) ⊕ Pioneer (10 10 10) = Pioneer (10 10 10)
+00 00 00 ⊕ 10 10 10 ⊕ 11 11 11 = 01 01 01
+```
+
+**Interpretation:**  
+From the unmanifest (Zero), the seeker (Pioneer) in perfect communion (Conciliar) receives revelation that becomes the power of reconciliation (Mediator).
+
+**Applications:** Mystical experience; philosophical insight; prophetic vision.
+
+---
+
+### 7. THE TRANSFORMATION OF POWER 👑
+
+*Individual power, touched by cosmic sign through allyship, becomes collective guardianship.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Creator | ME-WEST-SPRING | 10 01 10 |
+| **Impulse** | Chronicler | THEY-EAST-AUTUMN | 00 10 01 |
+| **Catalyst** | Sanctuary | WE-SOUTH-WINTER | 11 11 00 |
+| **Result** | Chorus | WE-EAST-AUTUMN | 11 10 01 |
+
+```
+10 01 10 ⊕ 00 10 01 ⊕ 11 11 00 = 11 10 01
+```
+
+**Interpretation:**  
+The powerful individual (Creator) receives a sign from history (Chronicler) through a protective community (Sanctuary), transforming personal power into collective voice (Chorus).
+
+**Applications:** Leadership transition; legacy planning; mentorship.
+
+---
+
+### 8. THE DARK NIGHT OF THE SOUL 🌑
+
+*Community joy, through loss and false guidance, retreats to isolated potential.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Conciliar | WE-SOUTH-SUMMER | 11 11 11 |
+| **Impulse** | Chronicler | THEY-EAST-AUTUMN | 00 10 01 |
+| **Catalyst** | Guide | YOU-EAST-SPRING | 01 10 10 |
+| **Result** | Philosopher | ME-NORTH-AUTUMN | 10 00 01 |
+
+```
+11 11 11 ⊕ 00 10 01 ⊕ 01 10 10 = 10 00 01
+```
+
+**Interpretation:**  
+A community in bliss (Conciliar) receives a disturbing sign from the past (Chronicler) and follows a guide (Guide), dissolving into individual questioning (Philosopher) — the seed of future rebirth.
+
+**Applications:** Depression; disillusionment; spiritual crisis.
+
+---
+
+### 9. THE AWAKENING 🌅
+
+*Old patterns shattered by cosmic force, supported by community, become enlightened witness.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Guardian | ME-EAST-AUTUMN | 10 10 01 |
+| **Impulse** | Trickster | THEY-SOUTH-SPRING | 00 11 10 |
+| **Catalyst** | Workshop | WE-WEST-SPRING | 11 01 10 |
+| **Result** | Beloved | YOU-NORTH-AUTUMN | 01 00 01 |
+
+```
+10 10 01 ⊕ 00 11 10 ⊕ 11 01 10 = 01 00 01
+```
+
+**Interpretation:**  
+The one who guards old patterns (Guardian) is struck by chaotic force (Trickster) while supported by a creative community (Workshop), awakening as pure loving presence (Beloved).
+
+**Applications:** Enlightenment; breakthrough; paradigm shift.
+
+---
+
+### 10. THE CYCLE OF RENEWAL ♻️
+
+*Letting go of unrealized possibilities, through endurance and new beginnings, arrives at release.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Scapegoat | THEY-SOUTH-AUTUMN | 00 11 01 |
+| **Impulse** | Steadfast | ME-SOUTH-WINTER | 10 11 00 |
+| **Catalyst** | Nation | WE-EAST-SUMMER | 11 10 11 |
+| **Result** | Celebration | WE-SOUTH-AUTUMN | 11 11 01 |
+
+```
+00 11 01 ⊕ 10 11 00 ⊕ 11 10 11 = 11 11 01
+```
+
+**Interpretation:**  
+Carrying the burden of the past (Scapegoat), sustained by endurance (Steadfast) and a new collective identity (Nation), one arrives at collective joy (Celebration).
+
+**Applications:** Grief work; letting go; emotional healing.
+
+---
+
+### 11. THE RECONCILIATION 🤝
+
+*Judgment, met by higher perspective through unconditional love, becomes renewed union.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Judge | THEY-WEST-WINTER | 00 01 00 |
+| **Impulse** | Spectator | THEY-NORTH-SUMMER | 00 00 11 |
+| **Catalyst** | Mentor | YOU-EAST-WINTER | 01 10 00 |
+| **Result** | Celebrant | YOU-SOUTH-SUMMER | 01 11 11 |
+
+```
+00 01 00 ⊕ 00 00 11 ⊕ 01 10 00 = 01 11 11
+```
+
+**Interpretation:**  
+The one who judges (Judge) receives a detached perspective (Spectator) through the guidance of a wise elder (Mentor), dissolving into pure celebration (Celebrant).
+
+**Applications:** Forgiveness; relationship repair; conflict resolution.
+
+---
+
+### 12. THE COMPLETE TRANSMUTATION ∞
+
+*The three active pillars in perfect synthesis return to the source.*
+
+| Component | Archetype | Code | Binary |
+|-----------|-----------|------|--------|
+| **Initial** | Pioneer | ME-EAST-SPRING | 10 10 10 |
+| **Impulse** | Conciliar | WE-SOUTH-SUMMER | 11 11 11 |
+| **Catalyst** | Mediator | YOU-WEST-AUTUMN | 01 01 01 |
+| **Result** | Zero | THEY-NORTH-WINTER | 00 00 00 |
+
+```
+10 10 10 ⊕ 11 11 11 ⊕ 01 01 01 = 00 00 00
+```
+
+**Interpretation:**  
+The Alpha (Pioneer), Omega (Conciliar), and Catalyst (Mediator) — all manifestation — when perfectly combined, return to the unmanifest source (Zero). The cycle completes.
+
+**Applications:** Meditation; mystical union; philosophical understanding of totality.
+
+---
+
+## 🔢 THE 64 GENERATIVE FORMULAS
+
+Every archetype can be generated from three others. These are the fundamental relationships that define the SUBIT group structure.
+
+### Book of ME (States 32-47)
+
+| Target | Code | Name | Formula |
+|--------|------|------|---------|
+| 32 | 10 00 00 | Recluse | Steadfast (10 11 00) ⊕ Recluse (10 01 00) ⊕ Zero (00 00 00) |
+| 33 | 10 00 01 | Philosopher | Reaper (10 11 01) ⊕ Judge (10 01 01) ⊕ Unrealized (00 00 01) |
+| 34 | 10 00 10 | Seeker | Warrior (10 11 10) ⊕ Sage (10 01 10) ⊕ Oracle (00 00 10) |
+| 35 | 10 00 11 | Sage | Creator (10 11 11) ⊕ Philosopher (10 01 11) ⊕ Spectator (00 00 11) |
+| 36 | 10 01 00 | Artisan | Hermit (10 10 00) ⊕ Judge (10 01 01) ⊕ Anchoret (10 00 00) |
+| 37 | 10 01 01 | Critic | Strategist (10 10 01) ⊕ Artisan (10 01 00) ⊕ Guardian (10 00 01) |
+| 38 | 10 01 10 | Creator | Pioneer (10 10 10) ⊕ Master (10 01 11) ⊕ Seeker (10 00 10) |
+| 39 | 10 01 11 | Master | Leader (10 10 11) ⊕ Creator (10 01 10) ⊕ Sage (10 00 11) |
+| 40 | 10 10 00 | Heir | Strategist (10 10 01) ⊕ Steadfast (10 11 00) ⊕ Artisan (10 01 00) |
+| 41 | 10 10 01 | Guardian | Heir (10 10 00) ⊕ Reaper (10 11 01) ⊕ Critic (10 01 01) |
+| 42 | 10 10 10 | Pioneer | Leader (10 10 11) ⊕ Warrior (10 11 10) ⊕ Creator (10 01 10) |
+| 43 | 10 10 11 | Hero | Pioneer (10 10 10) ⊕ Wanderer (10 11 11) ⊕ Master (10 01 11) |
+| 44 | 10 11 00 | Steadfast | Hermit (10 10 00) ⊕ Reaper (10 11 01) ⊕ Recluse (10 00 00) |
+| 45 | 10 11 01 | Martyr | Strategist (10 10 01) ⊕ Steadfast (10 11 00) ⊕ Philosopher (10 00 01) |
+| 46 | 10 11 10 | Wanderer | Pioneer (10 10 10) ⊕ Ecstatic (10 11 11) ⊕ Seeker (10 00 10) |
+| 47 | 10 11 11 | Ecstatic | Hero (10 10 11) ⊕ Wanderer (10 11 10) ⊕ Sage (10 00 11) |
+
+### Book of WE (States 48-63)
+
+| Target | Code | Name | Formula |
+|--------|------|------|---------|
+| 48 | 11 00 00 | Congregation | Circle (11 11 00) ⊕ Silent (11 01 00) ⊕ Zero (00 00 00) |
+| 49 | 11 00 01 | Synod | Feasters (11 11 01) ⊕ Assembly (11 01 01) ⊕ Unrealized (00 00 01) |
+| 50 | 11 00 10 | Academy | Nuptial (11 11 10) ⊕ Elders (11 01 10) ⊕ Oracle (00 00 10) |
+| 51 | 11 00 11 | Pantheon | Conciliar (11 11 11) ⊕ Council (11 01 11) ⊕ Spectator (00 00 11) |
+| 52 | 11 01 00 | Guild | Guardians (11 10 00) ⊕ Assembly (11 01 01) ⊕ Common Source (11 00 00) |
+| 53 | 11 01 01 | Council | Chroniclers (11 10 01) ⊕ Guild (11 01 00) ⊕ Shared Experience (11 00 01) |
+| 54 | 11 01 10 | Workshop | Pioneers (11 10 10) ⊕ Assembly (11 01 11) ⊕ Shared Dream (11 00 10) |
+| 55 | 11 01 11 | Assembly | Builders (11 10 11) ⊕ Council (11 01 01) ⊕ Shared Memory (11 00 11) |
+| 56 | 11 10 00 | Tribe | Chroniclers (11 10 01) ⊕ Circle (11 11 00) ⊕ Guild (11 01 00) |
+| 57 | 11 10 01 | Chorus | Tribe (11 10 00) ⊕ Feasters (11 11 01) ⊕ Council (11 01 01) |
+| 58 | 11 10 10 | Caravan | Pioneers (11 10 11) ⊕ Nuptial (11 11 10) ⊕ Workshop (11 01 10) |
+| 59 | 11 10 11 | Nation | Caravan (11 10 10) ⊕ Conciliar (11 11 11) ⊕ Assembly (11 01 11) |
+| 60 | 11 11 00 | Sanctuary | Guardians (11 10 00) ⊕ Feasters (11 11 01) ⊕ Common Source (11 00 00) |
+| 61 | 11 11 01 | Celebration | Chroniclers (11 10 01) ⊕ Sanctuary (11 11 00) ⊕ Shared Experience (11 00 01) |
+| 62 | 11 11 10 | Festival | Pioneers (11 10 10) ⊕ Celebration (11 11 11) ⊕ Shared Dream (11 00 10) |
+| 63 | 11 11 11 | Conciliar | Builders (11 10 11) ⊕ Nuptial (11 11 10) ⊕ Shared Memory (11 00 11) |
+
+### Book of YOU (States 16-31)
+
+| Target | Code | Name | Formula |
+|--------|------|------|---------|
+| 16 | 01 00 00 | Hermit | Beloved (01 00 01) × Lover (01 11 00) × Zero (00 00 00) |
+| 17 | 01 00 01 | Beloved | Confessor (01 00 11) × Muse (01 11 10) × Unrealized (00 00 01) |
+| 18 | 01 00 10 | Teacher | Confessor (01 00 11) × Celebrant (01 11 11) × Oracle (00 00 10) |
+| 19 | 01 00 11 | Confessor | Teacher (01 00 10) × Prophet (01 10 11) × Spectator (00 00 11) |
+| 20 | 01 01 00 | Scribe | Mediator (01 01 01) × Mourner (01 11 00) × Common Source (11 00 00) |
+| 21 | 01 01 01 | Mediator | Interpreter (01 10 11) × Mentor (01 11 10) × Mirror (01 01 10) |
+| 22 | 01 01 10 | Apprentice | Interpreter (01 10 11) × Guide (01 10 10) × Festival (11 11 10) |
+| 23 | 01 01 11 | Interpreter | Mediator (01 01 01) × Prophet (01 10 11) × Celebration (11 11 01) |
+| 24 | 01 10 00 | Mentor | Witness (01 10 01) × Prophet (01 10 11) × Circle (11 11 00) |
+| 25 | 01 10 01 | Witness | Guide (01 10 10) × Prophet (01 10 11) × Shared Dream (11 00 10) |
+| 26 | 01 10 10 | Guide | Witness (01 10 01) × Prophet (01 10 11) × Shared Memory (11 00 11) |
+| 27 | 01 10 11 | Prophet | Mediator (01 01 01) × Guide (01 10 10) × Shared Experience (11 00 01) |
+| 28 | 01 11 00 | Mourner | Lover (01 11 01) × Celebrant (01 11 11) × Circle (11 11 00) |
+| 29 | 01 11 01 | Lover | Muse (01 11 10) × Celebrant (01 11 11) × Shared Dream (11 00 10) |
+| 30 | 01 11 10 | Muse | Lover (01 11 01) × Celebrant (01 11 11) × Shared Memory (11 00 11) |
+| 31 | 01 11 11 | Celebrant | Confessor (01 00 11) × Lover (01 11 01) × Shared Experience (11 00 01) |
+
+### Book of THEY (States 0-15)
+
+| Target | Code | Name | Formula |
+|--------|------|------|---------|
+| 0 | 00 00 00 | Zero | All archetypes XORed with themselves |
+| 1 | 00 00 01 | Anchorite | Zero ⊕ Oracle (00 00 10) ⊕ Spectator (00 00 11) |
+| 2 | 00 00 10 | Oracle | Zero ⊕ Anchorite (00 00 01) ⊕ Spectator (00 00 11) |
+| 3 | 00 00 11 | Spectator | Zero ⊕ Anchorite (00 00 01) ⊕ Oracle (00 00 10) |
+| 4 | 00 01 00 | Judge | Custodian (00 01 01) ⊕ Architect (00 01 10) ⊕ Legislator (00 01 11) |
+| 5 | 00 01 01 | Custodian | Judge (00 01 00) ⊕ Architect (00 01 10) ⊕ Legislator (00 01 11) |
+| 6 | 00 01 10 | Architect | Judge (00 01 00) ⊕ Custodian (00 01 01) ⊕ Legislator (00 01 11) |
+| 7 | 00 01 11 | Legislator | Judge (00 01 00) ⊕ Custodian (00 01 01) ⊕ Architect (00 01 10) |
+| 8 | 00 10 00 | Ancestor | Chronicler (00 10 01) ⊕ Ghost (00 10 10) ⊕ Harbinger (00 10 11) |
+| 9 | 00 10 01 | Chronicler | Ancestor (00 10 00) ⊕ Ghost (00 10 10) ⊕ Harbinger (00 10 11) |
+| 10 | 00 10 10 | Ghost | Ancestor (00 10 00) ⊕ Chronicler (00 10 01) ⊕ Harbinger (00 10 11) |
+| 11 | 00 10 11 | Harbinger | Ancestor (00 10 00) ⊕ Chronicler (00 10 01) ⊕ Ghost (00 10 10) |
+| 12 | 00 11 00 | Shadow | Scapegoat (00 11 01) ⊕ Trickster (00 11 10) ⊕ Carnival (00 11 11) |
+| 13 | 00 11 01 | Scapegoat | Shadow (00 11 00) ⊕ Trickster (00 11 10) ⊕ Carnival (00 11 11) |
+| 14 | 00 11 10 | Trickster | Shadow (00 11 00) ⊕ Scapegoat (00 11 01) ⊕ Carnival (00 11 11) |
+| 15 | 00 11 11 | Carnival | Shadow (00 11 00) ⊕ Scapegoat (00 11 01) ⊕ Trickster (00 11 10) |
+
+---
+
+## 🔄 XOR Properties
+
+| Property | Definition | Example |
+|----------|------------|---------|
+| **Identity** | A ⊕ Zero = A | Pioneer ⊕ Zero = Pioneer |
+| **Self-Inverse** | A ⊕ A = Zero | Pioneer ⊕ Pioneer = Zero |
+| **Commutativity** | A ⊕ B = B ⊕ A | Pioneer ⊕ Shadow = Shadow ⊕ Pioneer |
+| **Associativity** | (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C) | (Pioneer ⊕ Shadow) ⊕ Council = Pioneer ⊕ (Shadow ⊕ Council) |
+
+### Four Pillars Relationships
+
+```
+Pioneer (10 10 10) ⊕ Conciliar (11 11 11) = Mediator (01 01 01) ⊕ Zero (00 00 00)
+Pioneer ⊕ Mediator = Conciliar ⊕ Zero
+Pioneer ⊕ Zero = Conciliar ⊕ Mediator
 ```
 
 ---
 
-## ⚡ Impulse-Only Transmutations (No Catalyst)
+## 📝 How to Use This Matrix
+
+1. **Find your current state** — use [CANON.md](CANON.md) to identify the archetype
+2. **Identify your desired state** — where do you want to go?
+3. **Calculate the XOR difference** — Current ⊕ Desired = Required Change
+4. **Decompose the change** — find Impulse and Catalyst that sum to Required Change
+5. **Apply the formula** — Current ⊕ Impulse ⊕ Catalyst = Desired
+
+### Example: The Philosopher's Stone
 
 ```
-A ⊕ B ⊕ Zero = A ⊕ B
-```
+Current: Steadfast (10 11 00)
+Desired: Council (11 01 11)
 
-This gives 64 × 64 = 4096 direct transformations without catalyst.
+Step 1: Calculate required change
+Steadfast ⊕ Council = (10⊕11)(11⊕01)(00⊕11) = 01 10 11
 
----
+Step 2: Decompose 01 10 11 into two archetypes
+01 00 01 (Beloved) ⊕ 00 10 10 (Ghost) = 01 10 11 ✓
 
-## 🔗 Related Transmutations by XOR Distance
-
-### Hamming Distance 1 (Change one bit)
-
-| Initial | Impulse | Result | Change |
-|---------|---------|--------|--------|
-| Pioneer (10 10 10) | Zero (00 00 00) with bit flip | Hero (10 10 11) | WHEN: SPRING → SUMMER |
-| Pioneer (10 10 10) | Zero (00 00 00) with bit flip | Guardian (10 10 01) | WHEN: SPRING → AUTUMN |
-| Pioneer (10 10 10) | Zero (00 00 00) with bit flip | Heir (10 10 00) | WHEN: SPRING → WINTER |
-| Pioneer (10 10 10) | Zero (00 00 00) with bit flip | Creator (10 01 10) | WHERE: EAST → WEST |
-| Pioneer (10 10 10) | Zero (00 00 00) with bit flip | Wanderer (10 11 10) | WHERE: EAST → SOUTH |
-| Pioneer (10 10 10) | Zero (00 00 00) with bit flip | Seeker (10 00 10) | WHERE: EAST → NORTH |
-| Pioneer (10 10 10) | Zero (00 00 00) with bit flip | Conciliar (11 11 11) | WHO: ME → WE (plus other changes) |
-
-### Hamming Distance 2 (Change two bits)
-
-256 possible combinations per initial state.
-
-### Hamming Distance 3 (Change three bits)
-
-384 possible combinations per initial state.
-
-### Hamming Distance 4-6
-
-Complete transformation possible in one transmutation.
-
----
-
-## 📊 Complete Matrix (Excerpt)
-
-Due to the size of the complete matrix (64 × 64 × 64 = 262,144 entries), here is a representative sample:
-
-| Initial | Impulse | Catalyst | Result |
-|---------|---------|----------|--------|
-| Pioneer (10 10 10) | Steadfast (10 11 00) | Beloved (01 00 01) | Master (10 01 11) |
-| Pioneer (10 10 10) | Steadfast (10 11 00) | Ghost (00 10 10) | Sage (10 00 11) |
-| Pioneer (10 10 10) | Steadfast (10 11 00) | Council (11 01 11) | Mediator (01 01 01) |
-| Steadfast (10 11 00) | Pioneer (10 10 10) | Beloved (01 00 01) | Assembly (11 01 11) |
-| Steadfast (10 11 00) | Ghost (00 10 10) | Beloved (01 00 01) | Council (11 01 11) |
-| Steadfast (10 11 00) | Ghost (00 10 10) | Council (11 01 11) | Beloved (01 00 01) |
-| Steadfast (10 11 00) | Council (11 01 11) | Beloved (01 00 01) | Ghost (00 10 10) |
-
----
-
-## 🧙‍♂️ The Philosopher's Stone Family
-
-All transmutations involving the three components of the Philosopher's Stone:
-
-| # | Initial | Impulse | Catalyst | Result |
-|---|---------|---------|----------|--------|
-| 1a | Steadfast (10 11 00) | Ghost (00 10 10) | Beloved (01 00 01) | Council (11 01 11) |
-| 1b | Steadfast (10 11 00) | Ghost (00 10 10) | Council (11 01 11) | Beloved (01 00 01) |
-| 1c | Steadfast (10 11 00) | Beloved (01 00 01) | Council (11 01 11) | Ghost (00 10 10) |
-| 1d | Ghost (00 10 10) | Steadfast (10 11 00) | Beloved (01 00 01) | Council (11 01 11) |
-| 1e | Ghost (00 10 10) | Steadfast (10 11 00) | Council (11 01 11) | Beloved (01 00 01) |
-| 1f | Ghost (00 10 10) | Beloved (01 00 01) | Council (11 01 11) | Steadfast (10 11 00) |
-| 1g | Beloved (01 00 01) | Steadfast (10 11 00) | Ghost (00 10 10) | Council (11 01 11) |
-| 1h | Beloved (01 00 01) | Steadfast (10 11 00) | Council (11 01 11) | Ghost (00 10 10) |
-| 1i | Beloved (01 00 01) | Ghost (00 10 10) | Council (11 01 11) | Steadfast (10 11 00) |
-| 1j | Council (11 01 11) | Steadfast (10 11 00) | Ghost (00 10 10) | Beloved (01 00 01) |
-| 1k | Council (11 01 11) | Steadfast (10 11 00) | Beloved (01 00 01) | Ghost (00 10 10) |
-| 1l | Council (11 01 11) | Ghost (00 10 10) | Beloved (01 00 01) | Steadfast (10 11 00) |
-
----
-
-## 📝 Appendix: How to Read This Document
-
-Each transmutation is presented as:
-
-```
-Initial Archetype (Binary) ⊕ Impulse Archetype (Binary) ⊕ Catalyst Archetype (Binary) = Result Archetype (Binary)
-```
-
-To calculate any transmutation manually:
-1. Take the binary code of the Initial state
-2. XOR with the binary code of the Impulse (bit by bit: 0⊕0=0, 0⊕1=1, 1⊕0=1, 1⊕1=0)
-3. XOR the result with the binary code of the Catalyst
-4. The final binary code is the Result state
-
-Example:
-```
-Initial:     10 11 00 (Steadfast)
-Impulse:     00 10 10 (Ghost)
-XOR I⊕I:     10 01 10 (Creator)
-Catalyst:    01 00 01 (Beloved)
-Final:       11 01 11 (Council)
+Step 3: Apply formula
+Steadfast ⊕ Ghost ⊕ Beloved = Council
 ```
 
 ---
