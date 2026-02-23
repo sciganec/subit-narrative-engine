@@ -1,0 +1,950 @@
+# 📊 **archetypes_dbr.json**
+
+## Complete Catalog of 64 Archetypes in Dobre (DBR Edition)
+
+*JSON format for easy integration with applications, websites, and databases.*
+
+---
+
+```json
+{
+  "metadata": {
+    "name": "SUBIT-64 Dobre Archetypes",
+    "version": "1.0.0",
+    "description": "Complete catalog of 64 archetypes with Dobre phonetic pronunciation (DBR)",
+    "format": "D=WHO, B=WHERE, R=WHEN",
+    "vowels": {
+      "a": "00 - NORTH/WINTER",
+      "e": "01 - WEST/AUTUMN",
+      "i": "10 - EAST/SPRING",
+      "o": "11 - SOUTH/SUMMER"
+    },
+    "total": 64,
+    "date": "2026-02-23",
+    "license": "MIT"
+  },
+  
+  "archetypes": [
+    {
+      "id": 0,
+      "code": "000000",
+      "binary": "000000",
+      "who": "THEY",
+      "where": "NORTH",
+      "when": "WINTER",
+      "name": "Zero",
+      "dobre": "da-ba-ra",
+      "keywords": ["source", "unmanifest", "potential", "stillness", "origin"],
+      "description": "The unmanifest source, pure potential, the void before creation."
+    },
+    {
+      "id": 1,
+      "code": "000001",
+      "binary": "000001",
+      "who": "THEY",
+      "where": "NORTH",
+      "when": "AUTUMN",
+      "name": "Root",
+      "dobre": "da-ba-re",
+      "keywords": ["depth", "introspection", "hidden foundation", "origin"],
+      "description": "That which lies beneath, the hidden foundation, deep roots."
+    },
+    {
+      "id": 2,
+      "code": "000010",
+      "binary": "000010",
+      "who": "THEY",
+      "where": "NORTH",
+      "when": "SPRING",
+      "name": "Seed",
+      "dobre": "da-ba-ri",
+      "keywords": ["potential", "inner impulse", "hidden beginning", "germination"],
+      "description": "Hidden potential waiting to emerge, the impulse within."
+    },
+    {
+      "id": 3,
+      "code": "000011",
+      "binary": "000011",
+      "who": "THEY",
+      "where": "NORTH",
+      "when": "SUMMER",
+      "name": "Guardian",
+      "dobre": "da-ba-ro",
+      "keywords": ["protector", "keeper", "boundaries", "threshold"],
+      "description": "One who guards the threshold, keeper of boundaries."
+    },
+    {
+      "id": 4,
+      "code": "000100",
+      "binary": "000100",
+      "who": "THEY",
+      "where": "WEST",
+      "when": "WINTER",
+      "name": "Anchor",
+      "dobre": "da-be-ra",
+      "keywords": ["stability", "fixed point", "holding", "grounding"],
+      "description": "That which holds steady, the fixed point in chaos."
+    },
+    {
+      "id": 5,
+      "code": "000101",
+      "binary": "000101",
+      "who": "THEY",
+      "where": "WEST",
+      "when": "AUTUMN",
+      "name": "Sage",
+      "dobre": "da-be-re",
+      "keywords": ["ancient wisdom", "deep knowing", "elder", "wise one"],
+      "description": "Ancient wisdom, knowledge accumulated through time."
+    },
+    {
+      "id": 6,
+      "code": "000110",
+      "binary": "000110",
+      "who": "THEY",
+      "where": "WEST",
+      "when": "SPRING",
+      "name": "Hermit",
+      "dobre": "da-be-ri",
+      "keywords": ["solitary", "inner work", "withdrawal", "contemplation"],
+      "description": "One who withdraws from the world for inner work."
+    },
+    {
+      "id": 7,
+      "code": "000111",
+      "binary": "000111",
+      "who": "THEY",
+      "where": "WEST",
+      "when": "SUMMER",
+      "name": "Recluse",
+      "dobre": "da-be-ro",
+      "keywords": ["complete withdrawal", "solitude", "hermitage"],
+      "description": "One who has completely withdrawn from society."
+    },
+    {
+      "id": 8,
+      "code": "001000",
+      "binary": "001000",
+      "who": "THEY",
+      "where": "EAST",
+      "when": "WINTER",
+      "name": "Dreamer",
+      "dobre": "da-bi-ra",
+      "keywords": ["visions", "imagination", "possibility", "dreams"],
+      "description": "One who sees visions, dreamer of possibilities."
+    },
+    {
+      "id": 9,
+      "code": "001001",
+      "binary": "001001",
+      "who": "THEY",
+      "where": "EAST",
+      "when": "AUTUMN",
+      "name": "Seeker",
+      "dobre": "da-bi-re",
+      "keywords": ["searching", "questing", "longing", "seeker of truth"],
+      "description": "One who seeks, on a quest for truth or meaning."
+    },
+    {
+      "id": 10,
+      "code": "001010",
+      "binary": "001010",
+      "who": "THEY",
+      "where": "EAST",
+      "when": "SPRING",
+      "name": "Ghost",
+      "dobre": "da-bi-ri",
+      "keywords": ["external impulse", "otherness", "mystery", "visitor"],
+      "description": "The mysterious other, external impulse, that which comes from outside."
+    },
+    {
+      "id": 11,
+      "code": "001011",
+      "binary": "001011",
+      "who": "THEY",
+      "where": "EAST",
+      "when": "SUMMER",
+      "name": "Creator",
+      "dobre": "da-bi-ro",
+      "keywords": ["manifestation", "bringing forth", "making", "artisan"],
+      "description": "One who brings forth, creator, manifestor."
+    },
+    {
+      "id": 12,
+      "code": "001100",
+      "binary": "001100",
+      "who": "THEY",
+      "where": "SOUTH",
+      "when": "WINTER",
+      "name": "Patient",
+      "dobre": "da-bo-ra",
+      "keywords": ["waiting", "endurance", "patience", "stillness in darkness"],
+      "description": "One who waits in darkness, enduring patience."
+    },
+    {
+      "id": 13,
+      "code": "001101",
+      "binary": "001101",
+      "who": "THEY",
+      "where": "SOUTH",
+      "when": "AUTUMN",
+      "name": "Steadfast",
+      "dobre": "da-bo-re",
+      "keywords": ["unwavering", "persistent", "enduring", "faithful"],
+      "description": "Unwavering persistence, enduring through all conditions."
+    },
+    {
+      "id": 14,
+      "code": "001110",
+      "binary": "001110",
+      "who": "THEY",
+      "where": "SOUTH",
+      "when": "SPRING",
+      "name": "Passionate",
+      "dobre": "da-bo-ri",
+      "keywords": ["intense feeling", "inner fire", "ardor", "zeal"],
+      "description": "Burning with inner fire, intense feeling and ardor."
+    },
+    {
+      "id": 15,
+      "code": "001111",
+      "binary": "001111",
+      "who": "THEY",
+      "where": "SOUTH",
+      "when": "SUMMER",
+      "name": "Ecstatic",
+      "dobre": "da-bo-ro",
+      "keywords": ["transcendent joy", "union", "rapture", "bliss"],
+      "description": "Transcendent joy, ecstasy, union with the divine."
+    },
+    {
+      "id": 16,
+      "code": "010000",
+      "binary": "010000",
+      "who": "YOU",
+      "where": "NORTH",
+      "when": "WINTER",
+      "name": "Shadow",
+      "dobre": "de-ba-ra",
+      "keywords": ["hidden self", "darkness", "unconscious", "repressed"],
+      "description": "The hidden self, the darkness within, repressed aspects."
+    },
+    {
+      "id": 17,
+      "code": "010001",
+      "binary": "010001",
+      "who": "YOU",
+      "where": "NORTH",
+      "when": "AUTUMN",
+      "name": "Mirror",
+      "dobre": "de-ba-re",
+      "keywords": ["reflection", "self-knowledge", "seeing oneself"],
+      "description": "That which reflects, allowing self-knowledge and recognition."
+    },
+    {
+      "id": 18,
+      "code": "010010",
+      "binary": "010010",
+      "who": "YOU",
+      "where": "NORTH",
+      "when": "SPRING",
+      "name": "Fool",
+      "dobre": "de-ba-ri",
+      "keywords": ["innocence", "new beginning", "trust", "simplicity"],
+      "description": "Innocence, new beginnings, the fool who steps forward in trust."
+    },
+    {
+      "id": 19,
+      "code": "010011",
+      "binary": "010011",
+      "who": "YOU",
+      "where": "NORTH",
+      "when": "SUMMER",
+      "name": "Child",
+      "dobre": "de-ba-ro",
+      "keywords": ["pure being", "unselfconscious joy", "innocence"],
+      "description": "Pure being, unselfconscious joy, the child within."
+    },
+    {
+      "id": 20,
+      "code": "010100",
+      "binary": "010100",
+      "who": "YOU",
+      "where": "WEST",
+      "when": "WINTER",
+      "name": "Healer",
+      "dobre": "de-be-ra",
+      "keywords": ["making whole", "restoring", "healing", "mending"],
+      "description": "One who makes whole, healer, restorer of balance."
+    },
+    {
+      "id": 21,
+      "code": "010101",
+      "binary": "010101",
+      "who": "YOU",
+      "where": "WEST",
+      "when": "AUTUMN",
+      "name": "Confessor",
+      "dobre": "de-be-re",
+      "keywords": ["catalyst", "wise advisor", "transformer", "guide"],
+      "description": "One who catalyzes transformation, wise advisor, confessor."
+    },
+    {
+      "id": 22,
+      "code": "010110",
+      "binary": "010110",
+      "who": "YOU",
+      "where": "WEST",
+      "when": "SPRING",
+      "name": "Friend",
+      "dobre": "de-be-ri",
+      "keywords": ["companion", "supporter", "ally", "kindred"],
+      "description": "Companion on the journey, supporter, true friend."
+    },
+    {
+      "id": 23,
+      "code": "010111",
+      "binary": "010111",
+      "who": "YOU",
+      "where": "WEST",
+      "when": "SUMMER",
+      "name": "Beloved",
+      "dobre": "de-be-ro",
+      "keywords": ["loved one", "heart's desire", "intimate other", "love"],
+      "description": "The beloved, heart's desire, intimate other."
+    },
+    {
+      "id": 24,
+      "code": "011000",
+      "binary": "011000",
+      "who": "YOU",
+      "where": "EAST",
+      "when": "WINTER",
+      "name": "Messenger",
+      "dobre": "de-bi-ra",
+      "keywords": ["bearer of news", "herald", "one who brings tidings"],
+      "description": "Bearer of news, herald, one who brings messages."
+    },
+    {
+      "id": 25,
+      "code": "011001",
+      "binary": "011001",
+      "who": "YOU",
+      "where": "EAST",
+      "when": "AUTUMN",
+      "name": "Guide",
+      "dobre": "de-bi-re",
+      "keywords": ["one who shows the way", "leader", "pathfinder"],
+      "description": "One who shows the way, leader, pathfinder."
+    },
+    {
+      "id": 26,
+      "code": "011010",
+      "binary": "011010",
+      "who": "YOU",
+      "where": "EAST",
+      "when": "SPRING",
+      "name": "Teacher",
+      "dobre": "de-bi-ri",
+      "keywords": ["giver of wisdom", "instructor", "mentor"],
+      "description": "One who imparts wisdom, teacher, mentor."
+    },
+    {
+      "id": 27,
+      "code": "011011",
+      "binary": "011011",
+      "who": "YOU",
+      "where": "EAST",
+      "when": "SUMMER",
+      "name": "Master",
+      "dobre": "de-bi-ro",
+      "keywords": ["one who has attained", "expert", "master"],
+      "description": "One who has attained mastery, expert, accomplished one."
+    },
+    {
+      "id": 28,
+      "code": "011100",
+      "binary": "011100",
+      "who": "YOU",
+      "where": "SOUTH",
+      "when": "WINTER",
+      "name": "Warrior",
+      "dobre": "de-bo-ra",
+      "keywords": ["fighter", "protector", "one who battles"],
+      "description": "One who fights, protector, warrior."
+    },
+    {
+      "id": 29,
+      "code": "011101",
+      "binary": "011101",
+      "who": "YOU",
+      "where": "SOUTH",
+      "when": "AUTUMN",
+      "name": "Hunter",
+      "dobre": "de-bo-re",
+      "keywords": ["seeker", "pursuer", "one who tracks"],
+      "description": "One who seeks and pursues, hunter."
+    },
+    {
+      "id": 30,
+      "code": "011110",
+      "binary": "011110",
+      "who": "YOU",
+      "where": "SOUTH",
+      "when": "SPRING",
+      "name": "Lover",
+      "dobre": "de-bo-ri",
+      "keywords": ["one who loves passionately", "romantic", "lover"],
+      "description": "One who loves with passion, the romantic."
+    },
+    {
+      "id": 31,
+      "code": "011111",
+      "binary": "011111",
+      "who": "YOU",
+      "where": "SOUTH",
+      "when": "SUMMER",
+      "name": "King",
+      "dobre": "de-bo-ro",
+      "keywords": ["sovereign", "ruler", "one who governs"],
+      "description": "Sovereign, ruler, one who governs with authority."
+    },
+    {
+      "id": 32,
+      "code": "100000",
+      "binary": "100000",
+      "who": "ME",
+      "where": "NORTH",
+      "when": "WINTER",
+      "name": "Anchoret",
+      "dobre": "di-ba-ra",
+      "keywords": ["one who withdraws", "solitary", "anchorite"],
+      "description": "One who withdraws from the world for spiritual practice."
+    },
+    {
+      "id": 33,
+      "code": "100001",
+      "binary": "100001",
+      "who": "ME",
+      "where": "NORTH",
+      "when": "AUTUMN",
+      "name": "Recluse",
+      "dobre": "di-ba-re",
+      "keywords": ["deep solitude", "inner depth", "reclusive"],
+      "description": "Deep solitude, one who lives apart from society."
+    },
+    {
+      "id": 34,
+      "code": "100010",
+      "binary": "100010",
+      "who": "ME",
+      "where": "NORTH",
+      "when": "SPRING",
+      "name": "Dreamer",
+      "dobre": "di-ba-ri",
+      "keywords": ["inner visionary", "idealist", "dreamer"],
+      "description": "Inner visionary, one who dreams of possibilities."
+    },
+    {
+      "id": 35,
+      "code": "100011",
+      "binary": "100011",
+      "who": "ME",
+      "where": "NORTH",
+      "when": "SUMMER",
+      "name": "Guardian",
+      "dobre": "di-ba-ro",
+      "keywords": ["self-protector", "boundary-keeper", "guardian of self"],
+      "description": "One who protects their own boundaries, guardian of self."
+    },
+    {
+      "id": 36,
+      "code": "100100",
+      "binary": "100100",
+      "who": "ME",
+      "where": "WEST",
+      "when": "WINTER",
+      "name": "Healer",
+      "dobre": "di-be-ra",
+      "keywords": ["inner healer", "self-repair", "healing from within"],
+      "description": "Inner capacity for healing, self-repair."
+    },
+    {
+      "id": 37,
+      "code": "100101",
+      "binary": "100101",
+      "who": "ME",
+      "where": "WEST",
+      "when": "AUTUMN",
+      "name": "Sage",
+      "dobre": "di-be-re",
+      "keywords": ["inner wisdom", "self-knowledge", "wise within"],
+      "description": "Inner wisdom, knowledge of self."
+    },
+    {
+      "id": 38,
+      "code": "100110",
+      "binary": "100110",
+      "who": "ME",
+      "where": "WEST",
+      "when": "SPRING",
+      "name": "Seeker",
+      "dobre": "di-be-ri",
+      "keywords": ["inner quest", "self-discovery", "seeker within"],
+      "description": "Inner quest for truth, self-discovery."
+    },
+    {
+      "id": 39,
+      "code": "100111",
+      "binary": "100111",
+      "who": "ME",
+      "where": "WEST",
+      "when": "SUMMER",
+      "name": "Creator",
+      "dobre": "di-be-ro",
+      "keywords": ["inner creator", "self-expression", "creative within"],
+      "description": "Inner creative force, self-expression."
+    },
+    {
+      "id": 40,
+      "code": "101000",
+      "binary": "101000",
+      "who": "ME",
+      "where": "EAST",
+      "when": "WINTER",
+      "name": "Visionary",
+      "dobre": "di-bi-ra",
+      "keywords": ["seer", "one who beholds", "visionary"],
+      "description": "One who sees visions, beholds possibilities."
+    },
+    {
+      "id": 41,
+      "code": "101001",
+      "binary": "101001",
+      "who": "ME",
+      "where": "EAST",
+      "when": "AUTUMN",
+      "name": "Guide",
+      "dobre": "di-bi-re",
+      "keywords": ["inner guide", "intuition", "guide within"],
+      "description": "Inner guidance, intuition that shows the way."
+    },
+    {
+      "id": 42,
+      "code": "101010",
+      "binary": "101010",
+      "who": "ME",
+      "where": "EAST",
+      "when": "SPRING",
+      "name": "Pioneer",
+      "dobre": "di-bi-ri",
+      "keywords": ["beginning", "initiative", "pure intent", "alpha"],
+      "description": "The one who begins, pure initiative, the alpha."
+    },
+    {
+      "id": 43,
+      "code": "101011",
+      "binary": "101011",
+      "who": "ME",
+      "where": "EAST",
+      "when": "SUMMER",
+      "name": "Master",
+      "dobre": "di-bi-ro",
+      "keywords": ["self-mastery", "attainment", "master of self"],
+      "description": "Self-mastery, attainment of personal excellence."
+    },
+    {
+      "id": 44,
+      "code": "101100",
+      "binary": "101100",
+      "who": "ME",
+      "where": "SOUTH",
+      "when": "WINTER",
+      "name": "Steadfast",
+      "dobre": "di-bo-ra",
+      "keywords": ["endurance", "longing", "self-preservation", "steadfast"],
+      "description": "Enduring through difficulty, steadfast in purpose."
+    },
+    {
+      "id": 45,
+      "code": "101101",
+      "binary": "101101",
+      "who": "ME",
+      "where": "SOUTH",
+      "when": "AUTUMN",
+      "name": "Passionate",
+      "dobre": "di-bo-re",
+      "keywords": ["intense feeling", "desire", "passionate self"],
+      "description": "Intense feeling, desire, passion."
+    },
+    {
+      "id": 46,
+      "code": "101110",
+      "binary": "101110",
+      "who": "ME",
+      "where": "SOUTH",
+      "when": "SPRING",
+      "name": "Lover",
+      "dobre": "di-bo-ri",
+      "keywords": ["one who loves", "romantic", "lover"],
+      "description": "One who loves, the romantic heart."
+    },
+    {
+      "id": 47,
+      "code": "101111",
+      "binary": "101111",
+      "who": "ME",
+      "where": "SOUTH",
+      "when": "SUMMER",
+      "name": "Ecstatic",
+      "dobre": "di-bo-ro",
+      "keywords": ["transcendent individual joy", "ecstatic self"],
+      "description": "Personal transcendent joy, individual ecstasy."
+    },
+    {
+      "id": 48,
+      "code": "110000",
+      "binary": "110000",
+      "who": "WE",
+      "where": "NORTH",
+      "when": "WINTER",
+      "name": "Tribe",
+      "dobre": "do-ba-ra",
+      "keywords": ["collective source", "origin people", "tribe"],
+      "description": "The collective at its source, the original people."
+    },
+    {
+      "id": 49,
+      "code": "110001",
+      "binary": "110001",
+      "who": "WE",
+      "where": "NORTH",
+      "when": "AUTUMN",
+      "name": "Clan",
+      "dobre": "do-ba-re",
+      "keywords": ["extended family", "lineage", "clan"],
+      "description": "Extended family, lineage, those connected by blood."
+    },
+    {
+      "id": 50,
+      "code": "110010",
+      "binary": "110010",
+      "who": "WE",
+      "where": "NORTH",
+      "when": "SPRING",
+      "name": "Family",
+      "dobre": "do-ba-ri",
+      "keywords": ["immediate kin", "home", "family"],
+      "description": "Immediate family, those who share home and hearth."
+    },
+    {
+      "id": 51,
+      "code": "110011",
+      "binary": "110011",
+      "who": "WE",
+      "where": "NORTH",
+      "when": "SUMMER",
+      "name": "Nation",
+      "dobre": "do-ba-ro",
+      "keywords": ["large collective", "people", "nation"],
+      "description": "The larger collective, a people united by identity."
+    },
+    {
+      "id": 52,
+      "code": "110100",
+      "binary": "110100",
+      "who": "WE",
+      "where": "WEST",
+      "when": "WINTER",
+      "name": "Council",
+      "dobre": "do-be-ra",
+      "keywords": ["collective wisdom", "deliberation", "council"],
+      "description": "Collective wisdom, those who deliberate together."
+    },
+    {
+      "id": 53,
+      "code": "110101",
+      "binary": "110101",
+      "who": "WE",
+      "where": "WEST",
+      "when": "AUTUMN",
+      "name": "Assembly",
+      "dobre": "do-be-re",
+      "keywords": ["gathering", "meeting", "assembly"],
+      "description": "A gathering of people, meeting for common purpose."
+    },
+    {
+      "id": 54,
+      "code": "110110",
+      "binary": "110110",
+      "who": "WE",
+      "where": "WEST",
+      "when": "SPRING",
+      "name": "Guild",
+      "dobre": "do-be-ri",
+      "keywords": ["collective craft", "shared work", "guild"],
+      "description": "Those who share a craft, working together."
+    },
+    {
+      "id": 55,
+      "code": "110111",
+      "binary": "110111",
+      "who": "WE",
+      "where": "WEST",
+      "when": "SUMMER",
+      "name": "Choir",
+      "dobre": "do-be-ro",
+      "keywords": ["harmonious group", "united voice", "choir"],
+      "description": "Those who sing together, harmonious group."
+    },
+    {
+      "id": 56,
+      "code": "111000",
+      "binary": "111000",
+      "who": "WE",
+      "where": "EAST",
+      "when": "WINTER",
+      "name": "Vision",
+      "dobre": "do-bi-ra",
+      "keywords": ["shared dream", "collective hope", "vision"],
+      "description": "Shared vision, what we dream together."
+    },
+    {
+      "id": 57,
+      "code": "111001",
+      "binary": "111001",
+      "who": "WE",
+      "where": "EAST",
+      "when": "AUTUMN",
+      "name": "Quest",
+      "dobre": "do-bi-re",
+      "keywords": ["shared journey", "collective search", "quest"],
+      "description": "A journey we undertake together, collective quest."
+    },
+    {
+      "id": 58,
+      "code": "111010",
+      "binary": "111010",
+      "who": "WE",
+      "where": "EAST",
+      "when": "SPRING",
+      "name": "Pioneers",
+      "dobre": "do-bi-ri",
+      "keywords": ["those who begin together", "collective beginning"],
+      "description": "Those who begin together, collective initiative."
+    },
+    {
+      "id": 59,
+      "code": "111011",
+      "binary": "111011",
+      "who": "WE",
+      "where": "EAST",
+      "when": "SUMMER",
+      "name": "Builders",
+      "dobre": "do-bi-ro",
+      "keywords": ["collective creators", "builders together"],
+      "description": "Those who build together, collective creation."
+    },
+    {
+      "id": 60,
+      "code": "111100",
+      "binary": "111100",
+      "who": "WE",
+      "where": "SOUTH",
+      "when": "WINTER",
+      "name": "Army",
+      "dobre": "do-bo-ra",
+      "keywords": ["collective force", "protectors", "army"],
+      "description": "Organized force for protection, army."
+    },
+    {
+      "id": 61,
+      "code": "111101",
+      "binary": "111101",
+      "who": "WE",
+      "where": "SOUTH",
+      "when": "AUTUMN",
+      "name": "Legion",
+      "dobre": "do-bo-re",
+      "keywords": ["disciplined multitude", "legion"],
+      "description": "Disciplined collective, legion."
+    },
+    {
+      "id": 62,
+      "code": "111110",
+      "binary": "111110",
+      "who": "WE",
+      "where": "SOUTH",
+      "when": "SPRING",
+      "name": "Dancers",
+      "dobre": "do-bo-ri",
+      "keywords": ["collective joy in motion", "dancers"],
+      "description": "Those who express joy through movement together."
+    },
+    {
+      "id": 63,
+      "code": "111111",
+      "binary": "111111",
+      "who": "WE",
+      "where": "SOUTH",
+      "when": "SUMMER",
+      "name": "Conciliar",
+      "dobre": "do-bo-ro",
+      "keywords": ["unity", "ecstasy", "collective achievement", "omega"],
+      "description": "Complete unity, collective ecstasy, the omega."
+    }
+  ],
+  
+  "four_pillars": [
+    {
+      "role": "ALPHA",
+      "name": "Pioneer",
+      "dobre": "di-bi-ri",
+      "id": 42,
+      "meaning": "Beginning, initiative, pure intent"
+    },
+    {
+      "role": "OMEGA",
+      "name": "Conciliar",
+      "dobre": "do-bo-ro",
+      "id": 63,
+      "meaning": "Unity, ecstasy, collective achievement"
+    },
+    {
+      "role": "CATALYST",
+      "name": "Confessor",
+      "dobre": "de-be-re",
+      "id": 21,
+      "meaning": "Wisdom, transformation, guidance"
+    },
+    {
+      "role": "SOURCE",
+      "name": "Zero",
+      "dobre": "da-ba-ra",
+      "id": 0,
+      "meaning": "Unmanifest, potential, stillness"
+    }
+  ],
+  
+  "philosopher_stone": {
+    "name": "Philosopher's Stone",
+    "formula": "di-bo-ra ⊕ da-bi-ri ⊕ de-be-ro = do-be-ro",
+    "components": [
+      {
+        "archetype": "Steadfast",
+        "dobre": "di-bo-ra",
+        "id": 44,
+        "meaning": "Personal longing, endurance"
+      },
+      {
+        "archetype": "Ghost",
+        "dobre": "da-bi-ri",
+        "id": 10,
+        "meaning": "External impulse, mystery"
+      },
+      {
+        "archetype": "Beloved",
+        "dobre": "de-be-ro",
+        "id": 23,
+        "meaning": "Catalyst, wisdom, love"
+      },
+      {
+        "archetype": "Council",
+        "dobre": "do-be-ro",
+        "id": 52,
+        "meaning": "Collective achievement, unity"
+      }
+    ]
+  }
+}
+```
+
+---
+
+## 📋 **Quick Reference Card**
+
+```json
+{
+  "quick_reference": {
+    "who_mapping": {
+      "da": "THEY",
+      "de": "YOU",
+      "di": "ME",
+      "do": "WE"
+    },
+    "where_mapping": {
+      "ba": "NORTH",
+      "be": "WEST",
+      "bi": "EAST",
+      "bo": "SOUTH"
+    },
+    "when_mapping": {
+      "ra": "WINTER",
+      "re": "AUTUMN",
+      "ri": "SPRING",
+      "ro": "SUMMER"
+    },
+    "basic_words": {
+      "ba": "yes",
+      "bo": "no",
+      "re": "is/are (question)",
+      "de": "you",
+      "di": "I/me",
+      "do": "we",
+      "da": "they",
+      "ro": "now",
+      "ra": "before/why",
+      "ri": "later/what",
+      "be": "where"
+    }
+  }
+}
+```
+
+---
+
+## 🚀 **Usage Examples**
+
+### Python
+```python
+import json
+
+with open('archetypes_dbr.json', 'r') as f:
+    data = json.load(f)
+
+# Get pioneer
+pioneer = data['archetypes'][42]
+print(pioneer['dobre'])  # "di-bi-ri"
+print(pioneer['name'])    # "Pioneer"
+print(pioneer['keywords']) # ["beginning", "initiative", "pure intent", "alpha"]
+```
+
+### JavaScript
+```javascript
+const fs = require('fs');
+const data = JSON.parse(fs.readFileSync('archetypes_dbr.json'));
+
+// Get all archetypes
+data.archetypes.forEach(arch => {
+    console.log(`${arch.id}: ${arch.dobre} = ${arch.name}`);
+});
+
+// Get four pillars
+console.log(data.four_pillars);
+```
+
+### Browser
+```html
+<script>
+fetch('archetypes_dbr.json')
+    .then(response => response.json())
+    .then(data => {
+        const pioneer = data.archetypes.find(a => a.name === 'Pioneer');
+        console.log(pioneer.dobre); // "di-bi-ri"
+    });
+</script>
+```
+
+---
+
+**6 bits. 64 archetypes. One voice. Dobre.** 🜁 🜂 🜃 🜄
